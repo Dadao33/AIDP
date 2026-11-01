@@ -1,0 +1,107 @@
+{
+  "displayName": "BIC live decision calculations",
+  "description": "Calculates candidates only when requested by the agent",
+  "tools": [
+    {
+      "toolClassName": "BicScenarioCalculator",
+      "displayName": "calculate_account_scenario",
+      "description": "Compute forecast, risk, dated coverage, input evidence and inventory constraints now. No lookup of precomputed scenario rows.",
+      "version": "2.0.0",
+      "schema": [
+        {
+          "name": "case_id",
+          "type": "string",
+          "description": "Exact current account ID from trusted_context."
+        },
+        {
+          "name": "promo_pct",
+          "type": "number",
+          "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+        },
+        {
+          "name": "delay_days",
+          "type": "number",
+          "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+        }
+      ],
+      "conf": {}
+    },
+    {
+      "toolClassName": "BicTransferEvaluator",
+      "displayName": "evaluate_transfer",
+      "description": "Calculate a candidate warehouse transfer now: quantity, arrival, freight, margin, residual gaps and policy results. Supply quantity_units=-1 for the default policy sizing, or an explicit candidate quantity to test a user constraint. This is an evaluation, not a reservation.",
+      "version": "2.0.0",
+      "schema": [
+        {
+          "name": "case_id",
+          "type": "string",
+          "description": "Exact current account ID from trusted_context."
+        },
+        {
+          "name": "promo_pct",
+          "type": "number",
+          "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+        },
+        {
+          "name": "delay_days",
+          "type": "number",
+          "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+        },
+        {
+          "name": "quantity_units",
+          "type": "number",
+          "description": "Candidate transfer units. -1 uses policy sizing; an explicit nonnegative integer evaluates that candidate. Never silently change the user quantity."
+        }
+      ],
+      "conf": {}
+    },
+    {
+      "toolClassName": "BicAccelerationEvaluator",
+      "displayName": "evaluate_expedite",
+      "description": "Calculate bringing forward the existing factory receipt now, with estimated cost and policy checks. Never count it as additional supply.",
+      "version": "2.0.0",
+      "schema": [
+        {
+          "name": "case_id",
+          "type": "string",
+          "description": "Exact current account ID from trusted_context."
+        },
+        {
+          "name": "promo_pct",
+          "type": "number",
+          "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+        },
+        {
+          "name": "delay_days",
+          "type": "number",
+          "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+        }
+      ],
+      "conf": {}
+    },
+    {
+      "toolClassName": "BicSplitEvaluator",
+      "displayName": "evaluate_split",
+      "description": "Evaluate a negotiated split delivery now: no stock creation, residual firm deficit, missing customer consent and quotation. Not an approved promise change.",
+      "version": "2.0.0",
+      "schema": [
+        {
+          "name": "case_id",
+          "type": "string",
+          "description": "Exact current account ID from trusted_context."
+        },
+        {
+          "name": "promo_pct",
+          "type": "number",
+          "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+        },
+        {
+          "name": "delay_days",
+          "type": "number",
+          "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+        }
+      ],
+      "conf": {}
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><title>BIC — Guide de démonstration 25 minutes</title><style>:root{--ink:#20272b;--green:#375b43;--yellow:#ffd400}*{box-sizing:border-box}body{margin:0;background:#f5f6f2;color:var(--ink);font:17px/1.7 Arial,sans-serif}header{background:var(--ink);color:white;padding:54px 7vw}header b{color:var(--yellow);font-size:32px}main{max-width:1060px;margin:auto;padding:35px 42px 80px}h1{font-size:42px;line-height:1.12}h2{border-top:5px solid var(--yellow);padding-top:22px;margin-top:52px;font-size:29px;line-height:1.25}h3{font-size:23px;margin-top:34px}blockquote{margin:20px 0;padding:18px 24px;background:white;border-left:5px solid var(--yellow);color:#274f3c}blockquote p{margin:0}table{border-collapse:collapse;width:100%;font-size:15px}th{text-align:left;background:var(--ink);color:white;padding:11px}td{padding:10px;border-bottom:1px solid #dce2d7;vertical-align:top}pre{background:#e8ede5;padding:20px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px}code{font-size:.88em}a{color:#246047}li{margin:.4em 0}.tools{position:sticky;top:0;padding:10px;text-align:right;background:#fff;border-bottom:1px solid #ddd}button{background:var(--yellow);border:0;padding:10px 20px;border-radius:6px;font-weight:bold;cursor:pointer}@media print{body{background:#fff;font-size:10pt}main{padding:0;max-width:none}header,.tools{display:none}h2{page-break-before:always}h1,h2,h3{page-break-after:avoid}blockquote,pre,tr{page-break-inside:avoid}a{color:inherit;text-decoration:none}}</style><header><b>BIC / AIDP</b><p>GUIDE PRÉSENTATEUR · 25 MINUTES<br>Explications en français · Dialogues en anglais</p></header><div class="tools"><button onclick="window.print()">Imprimer le guide</button></div><main><h1>BIC Retail Studio — guide présentateur</h1>
+<h2>25 minutes : présentation en anglais et démonstration AIDP</h2>
+<p><strong>Votre rôle pendant la démo :</strong> responsable Customer Service &amp; Supply Chain de BIC France. BIC est le fournisseur ; Carrefour, E.Leclerc, Monoprix et METRO sont les distributeurs. Les comptes sont des périmètres régionaux de scénario, pas une représentation des organisations contractuelles réelles des enseignes.</p>
+<p><strong>Le message central :</strong> la valeur de l’agent est la préparation d’une décision opérationnelle justifiée. Il rapproche une question, des faits datés et les politiques ; il compare les options et expose leurs limites. Les modèles prévoient et scorent. Les outils calculent. La personne décide.</p>
+<p><strong>Périmètre à annoncer une seule fois :</strong> les données de démonstration sont dans Object Storage. Aucun accès à JDE, aucune réservation physique, aucun message à un distributeur et aucune transmission à JDE ne sont exécutés. JDE intervient uniquement dans le discours sur l’architecture cible. La validation est une répétition du futur processus, pas un système d’autorisation de production.</p>
+<blockquote>
+<p>“Today, the data is in Object Storage. We are demonstrating the decision journey. JDE is the future operational integration context, not a connected system in this demonstration.”</p>
+</blockquote>
+<h2>Préparation avant la réunion</h2>
+<h3>Les fichiers à avoir ouverts</h3>
+<ol>
+<li><code>presentation/BIC_AIDP_25min_EN.pptx</code> : six diapositives principales ; les deux annexes sont masquées en mode diaporama. Les notes sont en anglais.</li>
+<li>L’application anglaise : <code>http://127.0.0.1:8766/</code>. La version française historique reste séparée sur son port habituel.</li>
+<li>Le workspace AIDP : dossier <code>/Workspace/BICDemo</code>, catalogues <code>bronze.bic_bronze</code>, <code>silver.bic_silver</code>, <code>gold.bic_gold</code>.</li>
+<li>L’expérience MLOps <code>BIC_Retail_Service_Risk</code> et le dernier run terminé.</li>
+<li>L’agent <code>BIC_Retail_Service_Copilot</code>, son Playground et la trace d’une réponse vérifiée.</li>
+<li>Le bucket <code>AIDP_DATA</code>, namespace <code>frn9volod3kr</code>, préfixe <code>Demo_BIC/bic-retail-v1/</code>.</li>
+</ol>
+<p>Consulter <code>DEPLOYMENT_STATUS.md</code> avant de présenter : il donne les identifiants déployés, les vérifications effectuées et les limites du périmètre. Ne pas appeler « live AIDP » une session de répétition locale.</p>
+<h3>Démarrage local</h3>
+<p>Depuis la racine du package :</p>
+<pre><code class="language-bash"># Si la CLI OCI n&#39;est pas dans le PATH :
+export OCI_CLI=&quot;$HOME/.local/bin/oci&quot;
+export OCI_CONFIG_PROFILE=DEFAULT
+python3 scripts/sync_cloud_exports.py
+bash scripts/start_aidp.sh
+</code></pre>
+<p>Le script utilise l’agent BIC déjà déployé et vérifié. La page indique <strong>AIDP agent mode</strong>. Pour une répétition sans appel cloud, lancer explicitement <code>BIC_MODE=rehearsal python3 runtime/server.py --port 8766</code>. Ne lancer qu’un seul serveur sur ce port.</p>
+<p>Ne jamais réutiliser l’endpoint SPORT ou RetailNova. La CLI OCI doit être authentifiée. En mode AIDP, une erreur de l’agent reste une erreur : l’application ne remplace pas silencieusement la réponse par un scénario local.</p>
+<h3>Contrôle à J−1 puis dix minutes avant</h3>
+<ul>
+<li>Vérifier que le cluster Spark et l’AI Compute de l’agent sont disponibles. Ils sont distincts.</li>
+<li>Vérifier les données Gold, le run MLOps et la version de politiques 1.2. Les exports locaux et cloud doivent provenir du même snapshot.</li>
+<li>Tester une question globale, une question Carrefour et une comparaison Monoprix après changement du délai. Vérifier que le hash du scénario correspond.</li>
+<li>Vérifier que les photographies de Cristal et 4 Colours sont visibles ; elles sont locales. Les autres photographies de gamme peuvent dépendre de leur hébergeur.</li>
+<li>Cliquer sur <strong>Reset view</strong> : aucun compte sélectionné sur l’accueil, aucun filtre régional conservé. Ce bouton ne supprime pas les décisions enregistrées.</li>
+<li>Préparer les onglets AIDP avant la réunion. Ne pas entraîner les modèles ni démarrer un cluster à froid pendant les 25 minutes.</li>
+<li>Garder les captures et les chiffres de ce guide comme support de secours. Si un service est indisponible, le dire et montrer le parcours en mode répétition explicitement identifié.</li>
+</ul>
+<h2>Conducteur chronométré</h2>
+<table>
+<thead>
+<tr>
+<th>Temps</th>
+<th>Écran</th>
+<th>But</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>00:00–01:30</td>
+<td>Slide 1</td>
+<td>Installer le rôle métier et le problème</td>
+</tr>
+<tr>
+<td>01:30–03:00</td>
+<td>Slide 2</td>
+<td>Installer la situation métier et les arbitrages</td>
+</tr>
+<tr>
+<td>03:00–05:00</td>
+<td>Slide 3</td>
+<td>Présenter les briques AIDP et Object Storage</td>
+</tr>
+<tr>
+<td>05:00–06:00</td>
+<td>Slide 4</td>
+<td>Distinguer modèle, outils, agent et humain</td>
+</tr>
+<tr>
+<td>06:00–06:30</td>
+<td>Transition</td>
+<td>Passer à l’application, rappeler le périmètre</td>
+</tr>
+<tr>
+<td>06:30–08:30</td>
+<td>National overview</td>
+<td>Passer des KPI aux régions et comptes concernés</td>
+</tr>
+<tr>
+<td>08:30–10:30</td>
+<td>Carrefour</td>
+<td>Lire les quantités et la cause datée</td>
+</tr>
+<tr>
+<td>10:30–12:30</td>
+<td>Carrefour + agent</td>
+<td>Comparer les solutions et les politiques</td>
+</tr>
+<tr>
+<td>12:30–16:30</td>
+<td>Monoprix</td>
+<td>Montrer un risque temporaire, un blocage, puis une simulation</td>
+</tr>
+<tr>
+<td>16:30–19:30</td>
+<td>AIDP</td>
+<td>Montrer données, notebooks, MLOps et outils de l’agent</td>
+</tr>
+<tr>
+<td>19:30–21:30</td>
+<td>Validation</td>
+<td>Faire valider un dossier et exporter le contrat cible</td>
+</tr>
+<tr>
+<td>21:30–22:30</td>
+<td>Slide 5</td>
+<td>Expliquer les mesures de valeur</td>
+</tr>
+<tr>
+<td>22:30–23:30</td>
+<td>Slide 6</td>
+<td>Relier la démonstration au contexte JDE BIC</td>
+</tr>
+<tr>
+<td>23:30–25:00</td>
+<td>Marge</td>
+<td>Une question client ou absorber la latence</td>
+</tr>
+</tbody></table>
+<p>Total : <strong>8 minutes de slides + 15 minutes de démo + 2 minutes de transition/marge</strong>. Les annexes ne s’ajoutent pas au parcours principal.</p>
+<h2>00:00–06:00 — présentation</h2>
+<h3>Slide 1 — Protect the promise. Make the next decision.</h3>
+<p>Ne pas commencer par une liste de fonctionnalités techniques. Installer une matinée de travail concrète : la rentrée approche, un transport est décalé, plusieurs comptes ont des signaux à examiner, le responsable doit arbitrer sans compromettre les autres clients ni la marge.</p>
+<blockquote>
+<p>“Imagine you are responsible for customer service and supply chain at BIC France. A major distributor has an upcoming commitment. Demand is moving, a receipt is late, and moving stock has a cost. Your question is not just ‘What is the risk?’ It is ‘What can we do, by when, under which rules, and who needs to approve it?’”</p>
+</blockquote>
+<blockquote>
+<p>“The demonstration follows that decision from the national picture to one account, then to a reviewed action.”</p>
+</blockquote>
+<h3>Slide 2 — Carrefour’s back-to-school order needs a decision</h3>
+<p><strong>Intention : installer l’histoire métier avant les chiffres.</strong> Vous êtes le responsable Customer Service &amp; Supply Chain de BIC. Carrefour attend sa commande pour la rentrée ; un retard transport remet la promesse en question. La personne doit arbitrer entre service client, marge, disponibilité pour les autres distributeurs et règles d’entreprise. Ne pas lire de KPI ni détailler le calcul du déficit sur cette slide.</p>
+<blockquote>
+<p>“You are BIC’s Customer Service and Supply Chain Manager. Carrefour is preparing for the back-to-school period and expects the order BIC has promised. Then a transport delay pushes a key inbound receipt past that delivery date. You need to decide what BIC can still commit to.”</p>
+</blockquote>
+<blockquote>
+<p>“Moving stock might protect Carrefour, but that stock may already be needed by another customer. Accelerating a receipt adds cost and needs confirmation. Changing the delivery plan requires the distributor’s agreement. You need a recovery plan that protects service and margin and respects the company’s rules.”</p>
+</blockquote>
+<blockquote>
+<p>“The demo follows that decision: understand the issue, compare feasible options, check the evidence and policies, and submit a proposal for human review.”</p>
+</blockquote>
+<p><strong>Transition vers la slide 3 :</strong></p>
+<blockquote>
+<p>“Let us first see how AIDP brings the information and the decision process together.”</p>
+</blockquote>
+<p><strong>Réserve, uniquement si l’on demande les chiffres :</strong> 97 350 stylos commandés − 64 100 déjà alloués − 18 150 attendus à temps = <strong>15 100 unités de commande ferme non couvertes au 31 août</strong>. La réception principale de 26 500 unités passe du 28 août au 1er septembre. Les 26 500 unités retardées et le déficit final mesurent donc deux choses différentes. Les 103 525 unités de demande prévue incluent les commandes fermes ; ne pas les additionner. Le pic de demande non couvert est de 21 275 unités. Le score de 54,7 % est une probabilité, pas un pourcentage d’unités manquantes. Ces détails seront montrés pendant la démo.</p>
+<h3>Slide 3 — One continuous chain to a human decision.</h3>
+<p>Reprendre le mécanisme vu dans SPORT, avec les sources B2B.</p>
+<blockquote>
+<p>“We start with files in Object Storage: accounts, firm orders, allocated inventory, planned receipts, dated incidents, budget and historical observations. Four notebooks ingest, check, train and publish the data. The agent queries the published facts and the policy evidence. The application presents the decision for human review.”</p>
+</blockquote>
+<blockquote>
+<p>“The same scenario and policy version are used from the question to the decision record.”</p>
+</blockquote>
+<p>Préciser que Spark réalise les traitements de données et prépare les modèles et faits de référence. L’AI Compute exécute le flow agent et ses outils Python de calcul à la demande. MLOps conserve les paramètres, métriques et artefacts. La recherche de politiques apporte des sources ; les règles numériques restent évaluées par du code déterministe.</p>
+<h3>Slide 4 — The agent makes the investigation interactive.</h3>
+<blockquote>
+<p>“ML forecasts demand and estimates risk. Tools calculate quantities, dates and policy results. The agent chooses the relevant evidence for the question, explains the operational cause and compares the trade-offs. A human remains responsible for the decision.”</p>
+</blockquote>
+<blockquote>
+<p>“The options are not displayed as a permanent dashboard answer. They appear when the user asks how to resolve the situation.”</p>
+</blockquote>
+<h2>06:30–08:30 — partir du portefeuille national</h2>
+<p><strong>Manipulation :</strong> ouvrir <strong>National overview</strong>, sans compte sélectionné. Montrer les quatre KPI financiers, puis le nombre de comptes et d’exceptions. Tous les montants sont en euros HT sur la semaine du 25 au 31 août.</p>
+<table>
+<thead>
+<tr>
+<th>KPI de départ</th>
+<th align="right">Valeur attendue</th>
+<th>Ce qu’il faut expliquer</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Revenue budget</td>
+<td align="right">€861,378</td>
+<td>Objectif budgété pour le même périmètre et la même semaine</td>
+</tr>
+<tr>
+<td>Sales forecast · net revenue</td>
+<td align="right">€823,951</td>
+<td>Quantités prévues × prix net ; ce n’est pas du CA déjà facturé</td>
+</tr>
+<tr>
+<td>Forecast versus revenue budget</td>
+<td align="right">−€37,427</td>
+<td>Écart de demande valorisée, avant toute déduction liée au service</td>
+</tr>
+<tr>
+<td>Gross margin exposed at peak</td>
+<td align="right">environ €8,836</td>
+<td>Somme par compte du pic non couvert × prix × taux de marge ; exposition, pas perte certaine</td>
+</tr>
+<tr>
+<td>Dated coverage exceptions</td>
+<td align="right">4</td>
+<td>Carrefour, Leclerc, Monoprix et METRO ; pas un filtre sur le seul score</td>
+</tr>
+<tr>
+<td>Firm units uncovered at promise</td>
+<td align="right">15,100</td>
+<td>Déficit des engagements fermes au 31 août</td>
+</tr>
+<tr>
+<td>Forecast gross margin</td>
+<td align="right">environ €252,279</td>
+<td>Marge de la demande prévue avant surcoûts et pertes de service</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>“Revenue, gross margin and units answer different questions. We keep them separate. The margin exposure is not a booked loss, and we do not subtract it twice from the forecast.”</p>
+</blockquote>
+<p><strong>Question à saisir dans le bouton flottant :</strong></p>
+<blockquote>
+<p>“Which regions and accounts need attention today, and why?”</p>
+</blockquote>
+<p><strong>Réponse à chercher :</strong> les quatre exceptions, avec la distinction déficit final / trou temporaire ; notamment Leclerc doit remonter malgré un score d’environ 37,9 %. Ne pas exiger une formulation mot pour mot d’un LLM ; vérifier les faits.</p>
+<p><strong>Manipulation :</strong> fermer le panneau si nécessaire, sélectionner <strong>Île-de-France</strong> sur la carte ou dans la liste. La courbe en dessous doit se filtrer sur Leclerc et Monoprix. Cliquer une date pour lire demande quotidienne, réceptions et cumul. Revenir à <strong>All France</strong> avant d’aller à Carrefour.</p>
+<blockquote>
+<p>“A national total may look comfortable while one regional account has a dated shortage. The map changes the scope of the curve; it does not silently select a customer.”</p>
+</blockquote>
+<h2>08:30–10:30 — Carrefour : lire le problème avant d’agir</h2>
+<p><strong>Manipulation :</strong> <strong>Distributor accounts → Carrefour / Hauts-de-France → Details</strong>. Montrer la photographie du produit, le nom du compte et l’événement transport. Descendre jusqu’aux courbes.</p>
+<p><strong>Question :</strong></p>
+<blockquote>
+<p>“What exactly is uncovered for Carrefour, and which event explains it?”</p>
+</blockquote>
+<p><strong>Attendu :</strong> réception de 26 500 unités décalée après le 31 août ; 15 100 unités fermes manquent à la date promise ; la demande prévue dépasse les ressources pendant deux jours. Ce n’est ni une cause inventée par le modèle, ni un problème supposé en magasin.</p>
+<p>Cliquer le <strong>30 August</strong> : demande cumulée <strong>84 432</strong>, disponibilité cumulée <strong>82 250</strong>, manque <strong>2 182</strong>. Cliquer le <strong>31 August</strong> : demande cumulée <strong>103 525</strong>, disponibilité <strong>82 250</strong>, manque <strong>21 275</strong>. Ne pas additionner 2 182 et 21 275 : les deux valeurs sont des écarts cumulés.</p>
+<blockquote>
+<p>“The green line is cumulative supply available by that date. The yellow line is cumulative forecast demand. When yellow is above green, we have a dated coverage need. A later receipt does not undo the earlier disruption.”</p>
+</blockquote>
+<h2>10:30–12:30 — rendre le travail de l’agent visible</h2>
+<p><strong>Question :</strong></p>
+<blockquote>
+<p>“Compare the solutions for this scenario. Explain which policies pass or block each option.”</p>
+</blockquote>
+<p><strong>Manipulation :</strong> attendre la réponse ; les courbes restent au-dessus. Les tuiles de solutions apparaissent après la question. Cliquer <strong>Internal BIC transfer</strong>, puis <strong>STK-01</strong>, <strong>FIN-01</strong>, <strong>AUT-01</strong>.</p>
+<p><strong>Chiffres attendus au scénario initial :</strong></p>
+<ul>
+<li>Transfert proposé : <strong>14 400 unités</strong>, arrivée <strong>26 August</strong>, transport <strong>€287</strong>.</li>
+<li>Entrepôt donneur <strong>BIC Centre Warehouse</strong>, receveur <strong>Warehouse BIC North</strong>.</li>
+<li>Stock physique <strong>74 850</strong> − réservations <strong>36 900</strong> − sécurité <strong>12 300</strong> = <strong>25 650 mobilisables</strong>.</li>
+<li>Multiple d’expédition : <strong>1 200</strong>. La commande ferme présente un manque de 15 100 ; on retient 12 multiples, soit 14 400. Le reliquat ferme est <strong>700</strong> ; il ne faut pas le masquer.</li>
+<li>Marge de l’option après transport : <strong>25,6 %</strong>, au-dessus du plancher <strong>25 %</strong>.</li>
+<li><strong>AUT-01</strong> exige une validation humaine. <strong>CLI-01</strong> impose une revue commerciale pour le reliquat.</li>
+<li>L’accélération usine est conditionnelle : capacité/transport non confirmés. La livraison fractionnée nécessite un accord client et un coût ; elle ne crée pas de stock.</li>
+</ul>
+<blockquote>
+<p>“The agent is not just saying ‘transfer stock’. It explains which warehouse can give, which warehouse receives, how much remains uncovered, what the move costs, and which policy still requires a person.”</p>
+</blockquote>
+<p>Ne pas annoncer « rupture résolue » : 700 unités fermes restent à traiter et la demande prévue peut avoir un besoin supplémentaire.</p>
+<h2>12:30–16:30 — Monoprix : le cas qui rend la valeur visible</h2>
+<h3>Première situation : déficit final nul, problème réel pendant deux jours</h3>
+<p><strong>Manipulation :</strong> <strong>Distributor accounts → Monoprix / Île-de-France → Details</strong>. Le scénario initial est <strong>10 % de hausse</strong>, <strong>3 jours de retard total</strong>.</p>
+<p><strong>Question :</strong></p>
+<blockquote>
+<p>“There is no final order deficit. Do we still need to act, and why?”</p>
+</blockquote>
+<p><strong>Attendu :</strong> conditionnement usine retardé, réception de <strong>50 870 unités</strong> du <strong>25</strong> au <strong>28 August</strong>. Couverture insuffisante le <strong>26</strong> et le <strong>27</strong> ; pic <strong>17 155 unités</strong>. Rattrapage le <strong>28</strong>. Au 31, le déficit de commande ferme est nul. L’action relève de la prévention du trou de couverture, pas de l’invention d’une nouvelle promesse client.</p>
+<p><strong>Question suivante :</strong></p>
+<blockquote>
+<p>“Compare ways to prevent the temporary gap. Can we use the donor warehouse without breaking our margin policy?”</p>
+</blockquote>
+<p>Cliquer le transfert : <strong>18 000 unités</strong>, arrivée <strong>26 August</strong>, <strong>€617</strong> de transport, marge après transport <strong>20,9 %</strong>. <strong>FIN-01 est bloquante</strong>. Montrer la règle cliquable et son plancher 25 %. Le stock mobilisable est <strong>33 850</strong>, mais disponibilité ne veut pas dire acceptabilité économique.</p>
+<blockquote>
+<p>“This is where the agent helps with the trade-off. There is enough stock, but the proposed move fails the margin rule. A persuasive explanation cannot override that control.”</p>
+</blockquote>
+<p>Cliquer <strong>Transfer case to manager</strong>. La demande est orientée vers le responsable supply chain, avec Finance consultée pour FIN-01. <strong>L’escalade ne vaut pas approbation de dérogation.</strong> Aucun stock n’est réservé.</p>
+<h3>Deuxième situation : la simulation change les chiffres de la comparaison</h3>
+<p><strong>Manipulation :</strong> rester sur Monoprix. Dans le simulateur près de la courbe, passer le retard total de <strong>3 à 4 jours</strong>, puis <strong>Apply scenario</strong>. Les anciennes solutions disparaissent. Ne pas dire « un retard supplémentaire de quatre jours » : le réglage signifie quatre jours au total.</p>
+<p><strong>Question :</strong></p>
+<blockquote>
+<p>“Recompare the solutions using the four-day delay now shown in the chart. What changes?”</p>
+</blockquote>
+<p><strong>Attendu :</strong> réception le <strong>29 August</strong>, pic de besoin <strong>30 190 unités</strong>, transfert préventif arrondi à <strong>31 200</strong>, toujours dans les <strong>33 850 mobilisables</strong>, coût <strong>€617</strong>, marge après transport <strong>25,6 %</strong>. Les statuts de politiques sont recalculés. L’option passe à une revue humaine au lieu d’un blocage FIN-01.</p>
+<blockquote>
+<p>“The larger move does not automatically make the business better. It spreads the same quoted freight over more units, so this specific margin check now passes. We still need transport confirmation and a commercial review of the forecast-driven quantity.”</p>
+</blockquote>
+<p>Montrer que les valeurs de la réponse correspondent au scénario courant et non au scénario précédent. Ne pas fusionner les quantités des deux propositions. L’hypothèse utilisateur n’établit pas une nouvelle cause d’incident.</p>
+<h2>16:30–19:30 — ouvrir AIDP : la mécanique de la démo</h2>
+<h3>30 secondes — Object Storage</h3>
+<p>Montrer le préfixe <code>Demo_BIC/bic-retail-v1/raw/</code> et les fichiers : accounts, supply, budget, policies, historical_snapshots. Le jeu comporte <strong>26 comptes</strong> et <strong>8 064 observations historiques</strong>.</p>
+<blockquote>
+<p>“These are the demo sources. There is no JDE extraction running behind this screen.”</p>
+</blockquote>
+<h3>60 secondes — notebooks et tables</h3>
+<p>Dans <code>/Workspace/BICDemo/notebooks</code>, montrer les quatre notebooks sans relancer les traitements :</p>
+<ol>
+<li><strong>01_bronze_ingest</strong> : lecture <code>oci://</code>, conservation de la provenance.</li>
+<li><strong>02_silver_quality_features</strong> : unicité, raccordement des comptes, calculs de stock, temporalité des labels.</li>
+<li><strong>03_ml_training_mlops</strong> : entraînement et suivi des modèles.</li>
+<li><strong>04_gold_scenarios_publish</strong> : faits de référence du portefeuille, politiques, métriques et exports. Les alternatives ne sont pas préenregistrées.</li>
+</ol>
+<p>Montrer l’appel <code>calculate_account_scenario</code> pour OPP-007 / 10 / 4, puis <code>evaluate_transfer</code> dans la trace. Les outils recalculent les dates, quantités, coûts et règles pendant la question. Les entrées et poids du modèle sont un instantané versionné issu d’Object Storage, embarqué dans le package ; ce ne sont pas des réponses stockées.</p>
+<blockquote>
+<p>“The notebooks prepare facts and numerical tools. They do not pre-author the answer to every business question.”</p>
+</blockquote>
+<h3>45 secondes — modèles</h3>
+<p>Montrer le run MLOps vérifié et les métriques. Si le run cloud n’est pas disponible, utiliser l’onglet <strong>Data &amp; models</strong> en disant explicitement qu’il s’agit des métriques de répétition locale.</p>
+<ul>
+<li>Risque : régression logistique, ROC-AUC <strong>0,905</strong>, Brier <strong>0,119</strong>.</li>
+<li>Demande hebdomadaire : régression log-linéaire, WAPE <strong>10,25 %</strong>, contre <strong>22,53 %</strong> pour la référence simple.</li>
+<li>Split chronologique : <strong>5 760 / 1 152 / 1 152</strong> observations ; seuil choisi sur la validation.</li>
+</ul>
+<blockquote>
+<p>“These measurements validate the demonstration workflow on synthetic outcomes. Production performance would need to be measured on BIC history, with agreed service labels and a backtest.”</p>
+</blockquote>
+<h3>45 secondes — agent et outils</h3>
+<p>Ouvrir la trace d’une question de comparaison vérifiée. Montrer les outils réellement appelés : contexte du scénario, solutions, politiques. Ne pas inventer une trace si l’écran ne la montre pas. Les outils Python et familles d’action sont définis à l’avance ; l’agent choisit les outils et quantités à évaluer, puis formule sa recommandation à partir des calculs. Les outils SQL lisent les faits de référence du portefeuille. La recherche documentaire justifie les politiques ; elle ne crée pas de règle nouvelle.</p>
+<blockquote>
+<p>“The question triggers retrieval and comparison. We can inspect the tools and the evidence used. The agent has no tool that can write into JDE.”</p>
+</blockquote>
+<h2>19:30–21:30 — validation finale et contrat cible</h2>
+<p><strong>Manipulation :</strong> revenir à Carrefour, scénario initial <strong>35 % / 4 jours</strong>. Demander à nouveau la comparaison, sélectionner le transfert, puis <strong>Prepare for human validation</strong>.</p>
+<p>Vérifier le dossier figé : compte, scénario, quantité <strong>14 400</strong>, coût <strong>€287</strong>, politiques et reliquat <strong>700</strong>. Cocher la revue puis <strong>Confirm as Operations</strong>. Recocher la revue puis <strong>Confirm as Account manager</strong>. Les deux rôles doivent avoir confirmé avant l’export.</p>
+<blockquote>
+<p>“For the rehearsal, I am playing the two reviewer roles. In production, authenticated identities and the workflow would enforce these responsibilities.”</p>
+</blockquote>
+<p>Cliquer <strong>Export target integration payload</strong>, puis télécharger le JSON. Montrer <code>request_id</code>, quantité, SKU, donneur, receveur, date, coût, rôles et hash. Le statut est <strong>EXPORT READY</strong>, pas « envoyé à JDE ».</p>
+<blockquote>
+<p>“This is the reviewed decision contract that a future integration could consume. Nothing has been transmitted to JDE. Before operational execution, stock, transport and authorization would be checked again.”</p>
+</blockquote>
+<p>Montrer <strong>Decision follow-up</strong> et le journal. Si un approbateur est absent, le bouton de transfert au manager existe ; cela ne contourne ni la règle de marge ni les autres approbations.</p>
+<h2>21:30–23:30 — conclure avec la valeur, puis JDE</h2>
+<h3>Slide 5 — Value comes from the quality of the decision.</h3>
+<blockquote>
+<p>“The first value to measure is the time to a reviewed decision. Then we measure service coverage, incremental freight, margin discipline and the completeness of the audit trail. We are not presenting an invented ROI.”</p>
+</blockquote>
+<p>Si le client trouve le montant de marge faible : ne pas grossir artificiellement le cas. Expliquer que l’on montre une seule semaine et quelques exceptions, et que la valeur doit être mesurée sur le volume réel de décisions. La démonstration prouve un mécanisme de décision, pas un business case annualisé.</p>
+<h3>Slide 6 — In a BIC + JDE context…</h3>
+<blockquote>
+<p>“JDE could remain the operational system of record. AIDP would add the analytical and agent decision layer across operational facts, forecasts and policies. The pilot would confirm the data semantics, approve the policy set, validate model performance and define the controlled hand-off.”</p>
+</blockquote>
+<p>Le workflow EnterpriseOne / Orchestrator est une option d’architecture cible, à vérifier selon l’édition et la version Tools de BIC. Ne pas promettre un workflow transfert prêt à l’emploi ni un connecteur déjà configuré.</p>
+<h2>Questions de réserve — en anglais</h2>
+<h3>Global</h3>
+<ul>
+<li>“Which accounts have a dated coverage gap even if their risk score is not high?”</li>
+<li>“Which regions contain temporary gaps rather than a final firm-order deficit?”</li>
+<li>“Explain the difference between revenue budget, sales forecast and margin exposure.”</li>
+<li>“Why can the national coverage curve hide a local problem?”</li>
+<li>“What evidence would you need before recommending a stock transfer?”</li>
+</ul>
+<h3>Carrefour</h3>
+<ul>
+<li>“Why does 15,100 firm units uncovered differ from the 21,275 forecast gap?”</li>
+<li>“Why are you proposing 14,400 units rather than 15,100?”</li>
+<li>“Which warehouse gives the stock, and which commitments protect that donor?”</li>
+<li>“What remains unresolved after the proposed transfer?”</li>
+<li>“Can the risk score alone justify spending money?”</li>
+</ul>
+<h3>Monoprix et autres comptes</h3>
+<ul>
+<li>“Why does Monoprix need attention when the final deficit is zero?”</li>
+<li>“Which policy blocks the 18,000-unit transfer?”</li>
+<li>“Does transferring the case to a manager approve an exception?”</li>
+<li>“Recompare after I change the total delay to four days.”</li>
+<li>“Why does Leclerc appear in the action queue with a moderate probability score?”</li>
+<li>“For METRO, which date is uncovered and when does supply recover?”</li>
+<li>“What should we do for a fully covered account with a high statistical score?”</li>
+</ul>
+<p>En mode AIDP ces formulations sont libres. En mode répétition, les réponses couvrent les intentions principales ; ce mode ne démontre pas les capacités linguistiques d’un LLM.</p>
+<h2>Réponses courtes aux objections</h2>
+<p><strong>« C’est juste un dashboard ? »</strong> — “The dashboard presents the facts. The agent investigates a question, retrieves the relevant evidence and policies, and explains the trade-offs. The solution cards appear after that request and are tied to the current scenario.”</p>
+<p><strong>« Le modèle explique la cause ? »</strong> — “No. The score is statistical. The explanation comes from dated receipt events and operational facts. Model contributions are not causal evidence.”</p>
+<p><strong>« Zéro déficit au 31 suffit ? »</strong> — “No. A later receipt may cover the end of the week while two earlier days remain uncovered. We evaluate the dated trajectory.”</p>
+<p><strong>« Pourquoi plus de demande que de commandes ? »</strong> — “Firm orders are commitments. The demand forecast includes anticipated demand and is floored by firm orders. A forecast-driven transfer needs commercial confirmation; it does not automatically create a new promise.”</p>
+<p><strong>« L’agent peut valider ? »</strong> — “No. It has read and analysis tools. Approval and escalation are explicit human actions in the application.”</p>
+<p><strong>« Tout est dans JDE ? »</strong> — “Not in this demo. All source data is in Object Storage. JDE is the integration context we would validate with BIC.”</p>
+<h2>Plan de secours et raccourci</h2>
+<p>Si une réponse cloud prend plus de 30 secondes, utiliser la marge de 90 secondes et montrer les faits de la courbe pendant l’attente. Si elle échoue, dire : “The live agent is unavailable. I will use the clearly labelled rehearsal mode to explain the remaining decision flow.” Ne pas prétendre que la réponse locale vient d’AIDP.</p>
+<p>Si vous avez deux minutes de retard, ne pas ouvrir METRO ni Leclerc ; ils sont des cas de réserve. Réduire la visite technique à une table Gold et la trace de l’agent. Conserver impérativement Monoprix, le blocage FIN-01 et la validation finale : c’est le cœur de la valeur.</p>
+<p><strong>Fin à 25 minutes :</strong> demander au client quel indicateur il souhaite mesurer dans un pilote : temps d’investigation, service, surcoût logistique ou conformité des décisions. Ne pas conclure par une promesse de gain non mesurée.</p>
+<h2>Vérifier que la proposition est calculée pendant l’échange</h2>
+<p>En complément, hors du parcours chronométré, revenir à Carrefour avec 35 % / 4 jours et demander :</p>
+<blockquote>
+<p>“Evaluate an internal transfer of exactly 13,200 units. What is its margin after freight and can we approve it? Do not change the quantity.”</p>
+</blockquote>
+<p>L’agent doit appeler <code>evaluate_transfer</code> et produire une tuile de 13 200 unités : marge <strong>24,986 %</strong>, FIN-01 bloquante, reliquat ferme <strong>1 900 unités</strong>. La quantité diffère du dimensionnement par défaut de 14 400 unités. Montrer l’heure de calcul et les outils réellement appelés. Il s’agit d’une nouvelle évaluation, jamais d’une décision approuvée. La validation reste humaine.</p>
+</main></html>

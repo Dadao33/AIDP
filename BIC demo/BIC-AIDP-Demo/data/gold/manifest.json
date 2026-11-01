@@ -1,0 +1,15 @@
+{
+  "mode": "aidp_object_storage_export",
+  "batch_id": "bic-20260824-v1",
+  "snapshot": "2026-08-24",
+  "accounts": 26,
+  "mlflow_run_id": "07fa9eb8d3e84880a2553261d2e8bc1b",
+  "raw_sha256": {
+    "accounts.json": "efb482de35c883b405b853be01e0546ddfbfeb5308897e55c84e10e2caab26de",
+    "budget.json": "0a0e64ac26add3cac712793857d315627b44d8aa4764b0285bedd60a4859e730",
+    "historical_snapshots.csv": "d869836ba35d81c573c9a6274de9edc61418e59f7dedbef3761e37e415422413",
+    "policies.json": "6f8aed15aff02a46fbf51fa30d2d939e6fe7a026cd858aa74d312e9a0708e385",
+    "supply.json": "0c1c5bf58241a02d742b449454991da962961ce5b52d14495c1dc433beeeb3a0"
+  },
+  "data_kind": "synthetic"
+}

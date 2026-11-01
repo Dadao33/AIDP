@@ -1,0 +1,2836 @@
+[
+  {
+    "id": "OPP-001",
+    "customer": "Carrefour · Hauts-de-France",
+    "initials": "CF",
+    "region": "France · Hauts-de-France",
+    "category": "Writing",
+    "product": "BIC Cristal Original",
+    "variant": "Blue · box of 50",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "color": "#2263bf",
+    "coverage_days": 6.41,
+    "lead_days": 4,
+    "promo_uplift": 0.35,
+    "delay_days": 4,
+    "volatility": 0.3,
+    "daily_units_28d": 10000,
+    "season_index": 1.15,
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "order_units": 97350,
+    "stock_units": 64100,
+    "alternate_available": 37950,
+    "pack_size": 1200,
+    "transfer_days": 2,
+    "freight": 287,
+    "retailer": "Carrefour",
+    "region_code": "32",
+    "region_name": "Hauts-de-France",
+    "photo_key": "cristal",
+    "daily_profile": [
+      1.1,
+      1.25,
+      1.6,
+      1.15,
+      0.5,
+      0.3,
+      1.25
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 10576
+      },
+      {
+        "date": "2026-08-12",
+        "units": 10007
+      },
+      {
+        "date": "2026-08-13",
+        "units": 11905
+      },
+      {
+        "date": "2026-08-14",
+        "units": 12088
+      },
+      {
+        "date": "2026-08-15",
+        "units": 5516
+      },
+      {
+        "date": "2026-08-16",
+        "units": 3648
+      },
+      {
+        "date": "2026-08-17",
+        "units": 13397
+      },
+      {
+        "date": "2026-08-18",
+        "units": 11115
+      },
+      {
+        "date": "2026-08-19",
+        "units": 9847
+      },
+      {
+        "date": "2026-08-20",
+        "units": 13360
+      },
+      {
+        "date": "2026-08-21",
+        "units": 15483
+      },
+      {
+        "date": "2026-08-22",
+        "units": 6624
+      },
+      {
+        "date": "2026-08-23",
+        "units": 3708
+      },
+      {
+        "date": "2026-08-24",
+        "units": 13205
+      }
+    ],
+    "unit_definition": "Unité = un stylo ; box of 50 ; expédition par multiples de 1 200 stylos.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-001"
+  },
+  {
+    "id": "OPP-002",
+    "customer": "E.Leclerc · Île-de-France",
+    "initials": "EL",
+    "region": "France · Île-de-France",
+    "category": "Writing",
+    "product": "BIC 4 Colours",
+    "variant": "Original · assortment",
+    "sku": "DEMO-4C-12",
+    "color": "#479fcd",
+    "coverage_days": 4.630243902439024,
+    "lead_days": 2,
+    "promo_uplift": 0.4,
+    "delay_days": 2,
+    "volatility": 0.27,
+    "daily_units_28d": 4100,
+    "season_index": 1.12,
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "order_units": 35916,
+    "stock_units": 18984,
+    "alternate_available": 24132,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 457,
+    "retailer": "E.Leclerc",
+    "region_code": "11",
+    "region_name": "Île-de-France",
+    "photo_key": "four-colours",
+    "daily_profile": [
+      0.95,
+      1.6,
+      1.35,
+      1.2,
+      0.55,
+      0.3,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 4435
+      },
+      {
+        "date": "2026-08-12",
+        "units": 3973
+      },
+      {
+        "date": "2026-08-13",
+        "units": 4674
+      },
+      {
+        "date": "2026-08-14",
+        "units": 5016
+      },
+      {
+        "date": "2026-08-15",
+        "units": 2373
+      },
+      {
+        "date": "2026-08-16",
+        "units": 1516
+      },
+      {
+        "date": "2026-08-17",
+        "units": 5283
+      },
+      {
+        "date": "2026-08-18",
+        "units": 4389
+      },
+      {
+        "date": "2026-08-19",
+        "units": 4129
+      },
+      {
+        "date": "2026-08-20",
+        "units": 5739
+      },
+      {
+        "date": "2026-08-21",
+        "units": 6373
+      },
+      {
+        "date": "2026-08-22",
+        "units": 2599
+      },
+      {
+        "date": "2026-08-23",
+        "units": 1476
+      },
+      {
+        "date": "2026-08-24",
+        "units": 5587
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-002"
+  },
+  {
+    "id": "OPP-003",
+    "customer": "Intermarché · Auvergne-Rhône-Alpes",
+    "initials": "IM",
+    "region": "France · Auvergne-Rhône-Alpes",
+    "category": "Lighters",
+    "product": "BIC Maxi",
+    "variant": "Couleurs classiques",
+    "sku": "DEMO-MAXI-50",
+    "color": "#ee8641",
+    "coverage_days": 1.9769354838709678,
+    "lead_days": 2,
+    "promo_uplift": 0.2,
+    "delay_days": 0,
+    "volatility": 0.38,
+    "daily_units_28d": 6200,
+    "season_index": 1.03,
+    "unit_price": 0.72,
+    "margin_rate": 0.3,
+    "order_units": 48450,
+    "stock_units": 12257,
+    "alternate_available": 12550,
+    "pack_size": 1200,
+    "transfer_days": 3,
+    "freight": 607,
+    "retailer": "Intermarché",
+    "region_code": "84",
+    "region_name": "Auvergne-Rhône-Alpes",
+    "photo_key": "maxi",
+    "daily_profile": [
+      1.35,
+      1.15,
+      0.95,
+      1.5,
+      0.65,
+      0.4,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 6654
+      },
+      {
+        "date": "2026-08-12",
+        "units": 5729
+      },
+      {
+        "date": "2026-08-13",
+        "units": 6941
+      },
+      {
+        "date": "2026-08-14",
+        "units": 7897
+      },
+      {
+        "date": "2026-08-15",
+        "units": 3721
+      },
+      {
+        "date": "2026-08-16",
+        "units": 2253
+      },
+      {
+        "date": "2026-08-17",
+        "units": 7615
+      },
+      {
+        "date": "2026-08-18",
+        "units": 6588
+      },
+      {
+        "date": "2026-08-19",
+        "units": 6532
+      },
+      {
+        "date": "2026-08-20",
+        "units": 8934
+      },
+      {
+        "date": "2026-08-21",
+        "units": 9388
+      },
+      {
+        "date": "2026-08-22",
+        "units": 3753
+      },
+      {
+        "date": "2026-08-23",
+        "units": 2240
+      },
+      {
+        "date": "2026-08-24",
+        "units": 8861
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-003"
+  },
+  {
+    "id": "OPP-004",
+    "customer": "Bureau Vallée · Normandie",
+    "initials": "BV",
+    "region": "France · Normandie",
+    "category": "Writing",
+    "product": "BIC Kids Evolution",
+    "variant": "Crayons · 12 couleurs",
+    "sku": "DEMO-KIDS-12",
+    "color": "#50a67f",
+    "coverage_days": 3.066086956521739,
+    "lead_days": 3,
+    "promo_uplift": 0.3,
+    "delay_days": 0,
+    "volatility": 0.22,
+    "daily_units_28d": 2300,
+    "season_index": 1.1,
+    "unit_price": 1.8,
+    "margin_rate": 0.29,
+    "order_units": 19116,
+    "stock_units": 7052,
+    "alternate_available": 9660,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 347,
+    "retailer": "Bureau Vallée",
+    "region_code": "28",
+    "region_name": "Normandie",
+    "photo_key": "kids",
+    "daily_profile": [
+      1.1,
+      0.95,
+      1.2,
+      1.65,
+      0.6,
+      0.3,
+      1.3
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 2382
+      },
+      {
+        "date": "2026-08-12",
+        "units": 2040
+      },
+      {
+        "date": "2026-08-13",
+        "units": 2619
+      },
+      {
+        "date": "2026-08-14",
+        "units": 3073
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1393
+      },
+      {
+        "date": "2026-08-16",
+        "units": 802
+      },
+      {
+        "date": "2026-08-17",
+        "units": 2730
+      },
+      {
+        "date": "2026-08-18",
+        "units": 2510
+      },
+      {
+        "date": "2026-08-19",
+        "units": 2535
+      },
+      {
+        "date": "2026-08-20",
+        "units": 3312
+      },
+      {
+        "date": "2026-08-21",
+        "units": 3327
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1357
+      },
+      {
+        "date": "2026-08-23",
+        "units": 861
+      },
+      {
+        "date": "2026-08-24",
+        "units": 3424
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-004"
+  },
+  {
+    "id": "OPP-005",
+    "customer": "Auchan · Grand Est",
+    "initials": "AU",
+    "region": "France · Grand Est",
+    "category": "Shaving",
+    "product": "BIC Flex 3",
+    "variant": "Rasoirs · pack de 3",
+    "sku": "DEMO-FLEX3-3",
+    "color": "#608abe",
+    "coverage_days": 1.503157894736842,
+    "lead_days": 2,
+    "promo_uplift": 0.1,
+    "delay_days": 0,
+    "volatility": 0.18,
+    "daily_units_28d": 1900,
+    "season_index": 1.0,
+    "unit_price": 2.1,
+    "margin_rate": 0.27,
+    "order_units": 14379,
+    "stock_units": 2856,
+    "alternate_available": 7179,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 277,
+    "retailer": "Auchan",
+    "region_code": "44",
+    "region_name": "Grand Est",
+    "photo_key": "flex3",
+    "daily_profile": [
+      1.1,
+      1.25,
+      1.6,
+      1.15,
+      0.5,
+      0.3,
+      1.25
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 1876
+      },
+      {
+        "date": "2026-08-12",
+        "units": 1663
+      },
+      {
+        "date": "2026-08-13",
+        "units": 2258
+      },
+      {
+        "date": "2026-08-14",
+        "units": 2624
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1126
+      },
+      {
+        "date": "2026-08-16",
+        "units": 632
+      },
+      {
+        "date": "2026-08-17",
+        "units": 2250
+      },
+      {
+        "date": "2026-08-18",
+        "units": 2173
+      },
+      {
+        "date": "2026-08-19",
+        "units": 2148
+      },
+      {
+        "date": "2026-08-20",
+        "units": 2656
+      },
+      {
+        "date": "2026-08-21",
+        "units": 2629
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1131
+      },
+      {
+        "date": "2026-08-23",
+        "units": 746
+      },
+      {
+        "date": "2026-08-24",
+        "units": 2875
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-005"
+  },
+  {
+    "id": "OPP-006",
+    "customer": "Coopérative U · Centre-Val de Loire",
+    "initials": "CU",
+    "region": "France · Centre-Val de Loire",
+    "category": "Writing",
+    "product": "BIC Cristal Original",
+    "variant": "Blue · box of 50",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "color": "#343942",
+    "coverage_days": 3.3444444444444446,
+    "lead_days": 3,
+    "promo_uplift": 0.05,
+    "delay_days": 0,
+    "volatility": 0.2,
+    "daily_units_28d": 4500,
+    "season_index": 1.1,
+    "unit_price": 0.3,
+    "margin_rate": 0.31,
+    "order_units": 35650,
+    "stock_units": 15050,
+    "alternate_available": 23650,
+    "pack_size": 1200,
+    "transfer_days": 2,
+    "freight": 313,
+    "retailer": "Coopérative U",
+    "region_code": "24",
+    "region_name": "Centre-Val de Loire",
+    "photo_key": "cristal",
+    "daily_profile": [
+      0.95,
+      1.6,
+      1.35,
+      1.2,
+      0.55,
+      0.3,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 4276
+      },
+      {
+        "date": "2026-08-12",
+        "units": 4025
+      },
+      {
+        "date": "2026-08-13",
+        "units": 5605
+      },
+      {
+        "date": "2026-08-14",
+        "units": 6243
+      },
+      {
+        "date": "2026-08-15",
+        "units": 2553
+      },
+      {
+        "date": "2026-08-16",
+        "units": 1451
+      },
+      {
+        "date": "2026-08-17",
+        "units": 5495
+      },
+      {
+        "date": "2026-08-18",
+        "units": 5374
+      },
+      {
+        "date": "2026-08-19",
+        "units": 5061
+      },
+      {
+        "date": "2026-08-20",
+        "units": 6001
+      },
+      {
+        "date": "2026-08-21",
+        "units": 6095
+      },
+      {
+        "date": "2026-08-22",
+        "units": 2783
+      },
+      {
+        "date": "2026-08-23",
+        "units": 1836
+      },
+      {
+        "date": "2026-08-24",
+        "units": 6711
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-006"
+  },
+  {
+    "id": "OPP-007",
+    "customer": "Monoprix · Île-de-France",
+    "initials": "MP",
+    "region": "France · Île-de-France",
+    "category": "Writing",
+    "product": "BIC Cristal Original",
+    "variant": "Blue · box of 50",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "color": "#2263bf",
+    "coverage_days": 1.5725806451612903,
+    "lead_days": 1,
+    "promo_uplift": 0.1,
+    "delay_days": 3,
+    "volatility": 0.3,
+    "daily_units_28d": 6200,
+    "season_index": 1.15,
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "order_units": 61150,
+    "stock_units": 9750,
+    "alternate_available": 44650,
+    "pack_size": 1200,
+    "transfer_days": 2,
+    "freight": 617,
+    "retailer": "Monoprix",
+    "region_code": "11",
+    "region_name": "Île-de-France",
+    "photo_key": "cristal",
+    "daily_profile": [
+      1.35,
+      1.15,
+      0.95,
+      1.5,
+      0.65,
+      0.4,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 5843
+      },
+      {
+        "date": "2026-08-12",
+        "units": 5799
+      },
+      {
+        "date": "2026-08-13",
+        "units": 7954
+      },
+      {
+        "date": "2026-08-14",
+        "units": 8385
+      },
+      {
+        "date": "2026-08-15",
+        "units": 3358
+      },
+      {
+        "date": "2026-08-16",
+        "units": 2005
+      },
+      {
+        "date": "2026-08-17",
+        "units": 7940
+      },
+      {
+        "date": "2026-08-18",
+        "units": 7563
+      },
+      {
+        "date": "2026-08-19",
+        "units": 6744
+      },
+      {
+        "date": "2026-08-20",
+        "units": 7924
+      },
+      {
+        "date": "2026-08-21",
+        "units": 8513
+      },
+      {
+        "date": "2026-08-22",
+        "units": 4023
+      },
+      {
+        "date": "2026-08-23",
+        "units": 2560
+      },
+      {
+        "date": "2026-08-24",
+        "units": 8886
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-007"
+  },
+  {
+    "id": "OPP-008",
+    "customer": "Carrefour · Centre-Val de Loire",
+    "initials": "CF",
+    "region": "France · Centre-Val de Loire",
+    "category": "Writing",
+    "product": "BIC 4 Colours",
+    "variant": "Original · assortment",
+    "sku": "DEMO-4C-12",
+    "color": "#479fcd",
+    "coverage_days": 3.079822616407982,
+    "lead_days": 3,
+    "promo_uplift": 0.25,
+    "delay_days": 0,
+    "volatility": 0.27,
+    "daily_units_28d": 3608,
+    "season_index": 1.12,
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "order_units": 32076,
+    "stock_units": 11112,
+    "alternate_available": 21132,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 527,
+    "retailer": "Carrefour",
+    "region_code": "24",
+    "region_name": "Centre-Val de Loire",
+    "photo_key": "four-colours",
+    "daily_profile": [
+      1.1,
+      0.95,
+      1.2,
+      1.65,
+      0.6,
+      0.3,
+      1.3
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 3490
+      },
+      {
+        "date": "2026-08-12",
+        "units": 3532
+      },
+      {
+        "date": "2026-08-13",
+        "units": 4629
+      },
+      {
+        "date": "2026-08-14",
+        "units": 4663
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1903
+      },
+      {
+        "date": "2026-08-16",
+        "units": 1208
+      },
+      {
+        "date": "2026-08-17",
+        "units": 4815
+      },
+      {
+        "date": "2026-08-18",
+        "units": 4360
+      },
+      {
+        "date": "2026-08-19",
+        "units": 3742
+      },
+      {
+        "date": "2026-08-20",
+        "units": 4536
+      },
+      {
+        "date": "2026-08-21",
+        "units": 5162
+      },
+      {
+        "date": "2026-08-22",
+        "units": 2425
+      },
+      {
+        "date": "2026-08-23",
+        "units": 1462
+      },
+      {
+        "date": "2026-08-24",
+        "units": 4929
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-008"
+  },
+  {
+    "id": "OPP-009",
+    "customer": "E.Leclerc · Bourgogne-Franche-Comté",
+    "initials": "EL",
+    "region": "France · Bourgogne-Franche-Comté",
+    "category": "Lighters",
+    "product": "BIC Maxi",
+    "variant": "Couleurs classiques",
+    "sku": "DEMO-MAXI-50",
+    "color": "#ee8641",
+    "coverage_days": 1.8827489481065918,
+    "lead_days": 2,
+    "promo_uplift": 0.45,
+    "delay_days": 0,
+    "volatility": 0.38,
+    "daily_units_28d": 7130,
+    "season_index": 1.03,
+    "unit_price": 0.72,
+    "margin_rate": 0.3,
+    "order_units": 54550,
+    "stock_units": 13424,
+    "alternate_available": 13750,
+    "pack_size": 1200,
+    "transfer_days": 3,
+    "freight": 497,
+    "retailer": "E.Leclerc",
+    "region_code": "27",
+    "region_name": "Bourgogne-Franche-Comté",
+    "photo_key": "maxi",
+    "daily_profile": [
+      1.1,
+      1.25,
+      1.6,
+      1.15,
+      0.5,
+      0.3,
+      1.25
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 7224
+      },
+      {
+        "date": "2026-08-12",
+        "units": 7162
+      },
+      {
+        "date": "2026-08-13",
+        "units": 8884
+      },
+      {
+        "date": "2026-08-14",
+        "units": 8809
+      },
+      {
+        "date": "2026-08-15",
+        "units": 3791
+      },
+      {
+        "date": "2026-08-16",
+        "units": 2504
+      },
+      {
+        "date": "2026-08-17",
+        "units": 9679
+      },
+      {
+        "date": "2026-08-18",
+        "units": 8306
+      },
+      {
+        "date": "2026-08-19",
+        "units": 7104
+      },
+      {
+        "date": "2026-08-20",
+        "units": 9131
+      },
+      {
+        "date": "2026-08-21",
+        "units": 10698
+      },
+      {
+        "date": "2026-08-22",
+        "units": 4829
+      },
+      {
+        "date": "2026-08-23",
+        "units": 2769
+      },
+      {
+        "date": "2026-08-24",
+        "units": 9424
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-009"
+  },
+  {
+    "id": "OPP-010",
+    "customer": "Intermarché · Bourgogne-Franche-Comté",
+    "initials": "IM",
+    "region": "France · Bourgogne-Franche-Comté",
+    "category": "Writing",
+    "product": "BIC Kids Evolution",
+    "variant": "Crayons · 12 couleurs",
+    "sku": "DEMO-KIDS-12",
+    "color": "#50a67f",
+    "coverage_days": 3.45593419506463,
+    "lead_days": 3,
+    "promo_uplift": 0.15,
+    "delay_days": 0,
+    "volatility": 0.22,
+    "daily_units_28d": 1702,
+    "season_index": 1.1,
+    "unit_price": 1.8,
+    "margin_rate": 0.29,
+    "order_units": 14244,
+    "stock_units": 5882,
+    "alternate_available": 7260,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 273,
+    "retailer": "Intermarché",
+    "region_code": "27",
+    "region_name": "Bourgogne-Franche-Comté",
+    "photo_key": "kids",
+    "daily_profile": [
+      0.95,
+      1.6,
+      1.35,
+      1.2,
+      0.55,
+      0.3,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 1802
+      },
+      {
+        "date": "2026-08-12",
+        "units": 1702
+      },
+      {
+        "date": "2026-08-13",
+        "units": 2024
+      },
+      {
+        "date": "2026-08-14",
+        "units": 2057
+      },
+      {
+        "date": "2026-08-15",
+        "units": 940
+      },
+      {
+        "date": "2026-08-16",
+        "units": 621
+      },
+      {
+        "date": "2026-08-17",
+        "units": 2279
+      },
+      {
+        "date": "2026-08-18",
+        "units": 1890
+      },
+      {
+        "date": "2026-08-19",
+        "units": 1676
+      },
+      {
+        "date": "2026-08-20",
+        "units": 2277
+      },
+      {
+        "date": "2026-08-21",
+        "units": 2636
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1127
+      },
+      {
+        "date": "2026-08-23",
+        "units": 631
+      },
+      {
+        "date": "2026-08-24",
+        "units": 2248
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-010"
+  },
+  {
+    "id": "OPP-011",
+    "customer": "Cultura · Normandie",
+    "initials": "CU",
+    "region": "France · Normandie",
+    "category": "Shaving",
+    "product": "BIC Flex 3",
+    "variant": "Rasoirs · pack de 3",
+    "sku": "DEMO-FLEX3-3",
+    "color": "#608abe",
+    "coverage_days": 1.9772727272727273,
+    "lead_days": 2,
+    "promo_uplift": 0.3,
+    "delay_days": 0,
+    "volatility": 0.18,
+    "daily_units_28d": 2508,
+    "season_index": 1.0,
+    "unit_price": 2.1,
+    "margin_rate": 0.27,
+    "order_units": 19251,
+    "stock_units": 4959,
+    "alternate_available": 9579,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 243,
+    "retailer": "Cultura",
+    "region_code": "28",
+    "region_name": "Normandie",
+    "photo_key": "flex3",
+    "daily_profile": [
+      1.35,
+      1.15,
+      0.95,
+      1.5,
+      0.65,
+      0.4,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 2714
+      },
+      {
+        "date": "2026-08-12",
+        "units": 2428
+      },
+      {
+        "date": "2026-08-13",
+        "units": 2857
+      },
+      {
+        "date": "2026-08-14",
+        "units": 3071
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1453
+      },
+      {
+        "date": "2026-08-16",
+        "units": 927
+      },
+      {
+        "date": "2026-08-17",
+        "units": 3228
+      },
+      {
+        "date": "2026-08-18",
+        "units": 2683
+      },
+      {
+        "date": "2026-08-19",
+        "units": 2528
+      },
+      {
+        "date": "2026-08-20",
+        "units": 3514
+      },
+      {
+        "date": "2026-08-21",
+        "units": 3897
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1588
+      },
+      {
+        "date": "2026-08-23",
+        "units": 902
+      },
+      {
+        "date": "2026-08-24",
+        "units": 3421
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-011"
+  },
+  {
+    "id": "OPP-012",
+    "customer": "Auchan · Hauts-de-France",
+    "initials": "AU",
+    "region": "France · Hauts-de-France",
+    "category": "Writing",
+    "product": "BIC Cristal Original",
+    "variant": "Blue · box of 50",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "color": "#343942",
+    "coverage_days": 3.5789473684210527,
+    "lead_days": 3,
+    "promo_uplift": 0.5,
+    "delay_days": 0,
+    "volatility": 0.2,
+    "daily_units_28d": 4275,
+    "season_index": 1.1,
+    "unit_price": 0.3,
+    "margin_rate": 0.31,
+    "order_units": 34450,
+    "stock_units": 15300,
+    "alternate_available": 23050,
+    "pack_size": 1200,
+    "transfer_days": 2,
+    "freight": 377,
+    "retailer": "Auchan",
+    "region_code": "32",
+    "region_name": "Hauts-de-France",
+    "photo_key": "cristal",
+    "daily_profile": [
+      1.1,
+      0.95,
+      1.2,
+      1.65,
+      0.6,
+      0.3,
+      1.3
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 4585
+      },
+      {
+        "date": "2026-08-12",
+        "units": 3945
+      },
+      {
+        "date": "2026-08-13",
+        "units": 4786
+      },
+      {
+        "date": "2026-08-14",
+        "units": 5452
+      },
+      {
+        "date": "2026-08-15",
+        "units": 2567
+      },
+      {
+        "date": "2026-08-16",
+        "units": 1552
+      },
+      {
+        "date": "2026-08-17",
+        "units": 5245
+      },
+      {
+        "date": "2026-08-18",
+        "units": 4544
+      },
+      {
+        "date": "2026-08-19",
+        "units": 4509
+      },
+      {
+        "date": "2026-08-20",
+        "units": 6162
+      },
+      {
+        "date": "2026-08-21",
+        "units": 6467
+      },
+      {
+        "date": "2026-08-22",
+        "units": 2585
+      },
+      {
+        "date": "2026-08-23",
+        "units": 1545
+      },
+      {
+        "date": "2026-08-24",
+        "units": 6117
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-012"
+  },
+  {
+    "id": "OPP-013",
+    "customer": "Carrefour · Grand Est",
+    "initials": "CF",
+    "region": "France · Grand Est",
+    "category": "Writing",
+    "product": "BIC Cristal Original",
+    "variant": "Blue · box of 50",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "color": "#2263bf",
+    "coverage_days": 0.9675925925925926,
+    "lead_days": 2,
+    "promo_uplift": 0.2,
+    "delay_days": 0,
+    "volatility": 0.3,
+    "daily_units_28d": 10800,
+    "season_index": 1.15,
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "order_units": 104050,
+    "stock_units": 10450,
+    "alternate_available": 77650,
+    "pack_size": 1200,
+    "transfer_days": 2,
+    "freight": 537,
+    "retailer": "Carrefour",
+    "region_code": "44",
+    "region_name": "Grand Est",
+    "photo_key": "cristal",
+    "daily_profile": [
+      1.1,
+      1.25,
+      1.6,
+      1.15,
+      0.5,
+      0.3,
+      1.25
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 11174
+      },
+      {
+        "date": "2026-08-12",
+        "units": 9572
+      },
+      {
+        "date": "2026-08-13",
+        "units": 12308
+      },
+      {
+        "date": "2026-08-14",
+        "units": 14444
+      },
+      {
+        "date": "2026-08-15",
+        "units": 6540
+      },
+      {
+        "date": "2026-08-16",
+        "units": 3761
+      },
+      {
+        "date": "2026-08-17",
+        "units": 12812
+      },
+      {
+        "date": "2026-08-18",
+        "units": 11799
+      },
+      {
+        "date": "2026-08-19",
+        "units": 11915
+      },
+      {
+        "date": "2026-08-20",
+        "units": 15547
+      },
+      {
+        "date": "2026-08-21",
+        "units": 15605
+      },
+      {
+        "date": "2026-08-22",
+        "units": 6370
+      },
+      {
+        "date": "2026-08-23",
+        "units": 4046
+      },
+      {
+        "date": "2026-08-24",
+        "units": 16091
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-013"
+  },
+  {
+    "id": "OPP-014",
+    "customer": "Coopérative U · Pays de la Loire",
+    "initials": "CU",
+    "region": "France · Pays de la Loire",
+    "category": "Writing",
+    "product": "BIC 4 Colours",
+    "variant": "Original · assortment",
+    "sku": "DEMO-4C-12",
+    "color": "#479fcd",
+    "coverage_days": 3.391084945332212,
+    "lead_days": 3,
+    "promo_uplift": 0.1,
+    "delay_days": 0,
+    "volatility": 0.27,
+    "daily_units_28d": 2378,
+    "season_index": 1.12,
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "order_units": 21276,
+    "stock_units": 8064,
+    "alternate_available": 13764,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 403,
+    "retailer": "Coopérative U",
+    "region_code": "52",
+    "region_name": "Pays de la Loire",
+    "photo_key": "four-colours",
+    "daily_profile": [
+      0.95,
+      1.6,
+      1.35,
+      1.2,
+      0.55,
+      0.3,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 2345
+      },
+      {
+        "date": "2026-08-12",
+        "units": 2081
+      },
+      {
+        "date": "2026-08-13",
+        "units": 2830
+      },
+      {
+        "date": "2026-08-14",
+        "units": 3285
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1408
+      },
+      {
+        "date": "2026-08-16",
+        "units": 790
+      },
+      {
+        "date": "2026-08-17",
+        "units": 2817
+      },
+      {
+        "date": "2026-08-18",
+        "units": 2722
+      },
+      {
+        "date": "2026-08-19",
+        "units": 2689
+      },
+      {
+        "date": "2026-08-20",
+        "units": 3320
+      },
+      {
+        "date": "2026-08-21",
+        "units": 3287
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1416
+      },
+      {
+        "date": "2026-08-23",
+        "units": 935
+      },
+      {
+        "date": "2026-08-24",
+        "units": 3599
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-014"
+  },
+  {
+    "id": "OPP-015",
+    "customer": "Bureau Vallée · Pays de la Loire",
+    "initials": "BV",
+    "region": "France · Pays de la Loire",
+    "category": "Lighters",
+    "product": "BIC Maxi",
+    "variant": "Couleurs classiques",
+    "sku": "DEMO-MAXI-50",
+    "color": "#ee8641",
+    "coverage_days": 2.029916753381894,
+    "lead_days": 2,
+    "promo_uplift": 0.25,
+    "delay_days": 0,
+    "volatility": 0.38,
+    "daily_units_28d": 7688,
+    "season_index": 1.03,
+    "unit_price": 0.72,
+    "margin_rate": 0.3,
+    "order_units": 60850,
+    "stock_units": 15606,
+    "alternate_available": 14650,
+    "pack_size": 1200,
+    "transfer_days": 3,
+    "freight": 627,
+    "retailer": "Bureau Vallée",
+    "region_code": "52",
+    "region_name": "Pays de la Loire",
+    "photo_key": "maxi",
+    "daily_profile": [
+      1.35,
+      1.15,
+      0.95,
+      1.5,
+      0.65,
+      0.4,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 7301
+      },
+      {
+        "date": "2026-08-12",
+        "units": 6882
+      },
+      {
+        "date": "2026-08-13",
+        "units": 9585
+      },
+      {
+        "date": "2026-08-14",
+        "units": 10663
+      },
+      {
+        "date": "2026-08-15",
+        "units": 4357
+      },
+      {
+        "date": "2026-08-16",
+        "units": 2478
+      },
+      {
+        "date": "2026-08-17",
+        "units": 9398
+      },
+      {
+        "date": "2026-08-18",
+        "units": 9189
+      },
+      {
+        "date": "2026-08-19",
+        "units": 8642
+      },
+      {
+        "date": "2026-08-20",
+        "units": 10241
+      },
+      {
+        "date": "2026-08-21",
+        "units": 10412
+      },
+      {
+        "date": "2026-08-22",
+        "units": 4760
+      },
+      {
+        "date": "2026-08-23",
+        "units": 3138
+      },
+      {
+        "date": "2026-08-24",
+        "units": 11458
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-015"
+  },
+  {
+    "id": "OPP-016",
+    "customer": "E.Leclerc · Bretagne",
+    "initials": "EL",
+    "region": "France · Bretagne",
+    "category": "Writing",
+    "product": "BIC Kids Evolution",
+    "variant": "Crayons · 12 couleurs",
+    "sku": "DEMO-KIDS-12",
+    "color": "#50a67f",
+    "coverage_days": 3.35524920466596,
+    "lead_days": 3,
+    "promo_uplift": 0.45,
+    "delay_days": 0,
+    "volatility": 0.22,
+    "daily_units_28d": 1886,
+    "season_index": 1.1,
+    "unit_price": 1.8,
+    "margin_rate": 0.29,
+    "order_units": 15804,
+    "stock_units": 6328,
+    "alternate_available": 7860,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 387,
+    "retailer": "E.Leclerc",
+    "region_code": "53",
+    "region_name": "Bretagne",
+    "photo_key": "kids",
+    "daily_profile": [
+      1.1,
+      0.95,
+      1.2,
+      1.65,
+      0.6,
+      0.3,
+      1.3
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 1778
+      },
+      {
+        "date": "2026-08-12",
+        "units": 1766
+      },
+      {
+        "date": "2026-08-13",
+        "units": 2420
+      },
+      {
+        "date": "2026-08-14",
+        "units": 2548
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1021
+      },
+      {
+        "date": "2026-08-16",
+        "units": 610
+      },
+      {
+        "date": "2026-08-17",
+        "units": 2418
+      },
+      {
+        "date": "2026-08-18",
+        "units": 2301
+      },
+      {
+        "date": "2026-08-19",
+        "units": 2049
+      },
+      {
+        "date": "2026-08-20",
+        "units": 2409
+      },
+      {
+        "date": "2026-08-21",
+        "units": 2592
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1225
+      },
+      {
+        "date": "2026-08-23",
+        "units": 779
+      },
+      {
+        "date": "2026-08-24",
+        "units": 2700
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-016"
+  },
+  {
+    "id": "OPP-017",
+    "customer": "Intermarché · Bretagne",
+    "initials": "IM",
+    "region": "France · Bretagne",
+    "category": "Shaving",
+    "product": "BIC Flex 3",
+    "variant": "Rasoirs · pack de 3",
+    "sku": "DEMO-FLEX3-3",
+    "color": "#608abe",
+    "coverage_days": 1.533106960950764,
+    "lead_days": 2,
+    "promo_uplift": 0.15,
+    "delay_days": 0,
+    "volatility": 0.18,
+    "daily_units_28d": 1178,
+    "season_index": 1.0,
+    "unit_price": 2.1,
+    "margin_rate": 0.27,
+    "order_units": 8979,
+    "stock_units": 1806,
+    "alternate_available": 4233,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 213,
+    "retailer": "Intermarché",
+    "region_code": "53",
+    "region_name": "Bretagne",
+    "photo_key": "flex3",
+    "daily_profile": [
+      1.1,
+      1.25,
+      1.6,
+      1.15,
+      0.5,
+      0.3,
+      1.25
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 1141
+      },
+      {
+        "date": "2026-08-12",
+        "units": 1154
+      },
+      {
+        "date": "2026-08-13",
+        "units": 1511
+      },
+      {
+        "date": "2026-08-14",
+        "units": 1521
+      },
+      {
+        "date": "2026-08-15",
+        "units": 621
+      },
+      {
+        "date": "2026-08-16",
+        "units": 395
+      },
+      {
+        "date": "2026-08-17",
+        "units": 1573
+      },
+      {
+        "date": "2026-08-18",
+        "units": 1423
+      },
+      {
+        "date": "2026-08-19",
+        "units": 1220
+      },
+      {
+        "date": "2026-08-20",
+        "units": 1481
+      },
+      {
+        "date": "2026-08-21",
+        "units": 1687
+      },
+      {
+        "date": "2026-08-22",
+        "units": 792
+      },
+      {
+        "date": "2026-08-23",
+        "units": 477
+      },
+      {
+        "date": "2026-08-24",
+        "units": 1608
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-017"
+  },
+  {
+    "id": "OPP-018",
+    "customer": "Carrefour · Nouvelle-Aquitaine",
+    "initials": "CF",
+    "region": "France · Nouvelle-Aquitaine",
+    "category": "Writing",
+    "product": "BIC Cristal Original",
+    "variant": "Blue · box of 50",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "color": "#343942",
+    "coverage_days": 3.9015151515151514,
+    "lead_days": 3,
+    "promo_uplift": 0.3,
+    "delay_days": 0,
+    "volatility": 0.2,
+    "daily_units_28d": 3960,
+    "season_index": 1.1,
+    "unit_price": 0.3,
+    "margin_rate": 0.31,
+    "order_units": 32050,
+    "stock_units": 15450,
+    "alternate_available": 21450,
+    "pack_size": 1200,
+    "transfer_days": 2,
+    "freight": 257,
+    "retailer": "Carrefour",
+    "region_code": "75",
+    "region_name": "Nouvelle-Aquitaine",
+    "photo_key": "cristal",
+    "daily_profile": [
+      0.95,
+      1.6,
+      1.35,
+      1.2,
+      0.55,
+      0.3,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 4017
+      },
+      {
+        "date": "2026-08-12",
+        "units": 3979
+      },
+      {
+        "date": "2026-08-13",
+        "units": 4930
+      },
+      {
+        "date": "2026-08-14",
+        "units": 4888
+      },
+      {
+        "date": "2026-08-15",
+        "units": 2107
+      },
+      {
+        "date": "2026-08-16",
+        "units": 1392
+      },
+      {
+        "date": "2026-08-17",
+        "units": 5376
+      },
+      {
+        "date": "2026-08-18",
+        "units": 4608
+      },
+      {
+        "date": "2026-08-19",
+        "units": 3943
+      },
+      {
+        "date": "2026-08-20",
+        "units": 5075
+      },
+      {
+        "date": "2026-08-21",
+        "units": 5948
+      },
+      {
+        "date": "2026-08-22",
+        "units": 2681
+      },
+      {
+        "date": "2026-08-23",
+        "units": 1536
+      },
+      {
+        "date": "2026-08-24",
+        "units": 5232
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-018"
+  },
+  {
+    "id": "OPP-019",
+    "customer": "METRO · Nouvelle-Aquitaine",
+    "initials": "ME",
+    "region": "France · Nouvelle-Aquitaine",
+    "category": "Writing",
+    "product": "BIC Cristal Original",
+    "variant": "Blue · box of 50",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "color": "#2263bf",
+    "coverage_days": 4.1,
+    "lead_days": 3,
+    "promo_uplift": 0.5,
+    "delay_days": 2,
+    "volatility": 0.3,
+    "daily_units_28d": 11500,
+    "season_index": 1.15,
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "order_units": 111550,
+    "stock_units": 47150,
+    "alternate_available": 82650,
+    "pack_size": 1200,
+    "transfer_days": 2,
+    "freight": 617,
+    "retailer": "METRO",
+    "region_code": "75",
+    "region_name": "Nouvelle-Aquitaine",
+    "photo_key": "cristal",
+    "daily_profile": [
+      1.35,
+      1.15,
+      0.95,
+      1.5,
+      0.65,
+      0.4,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 12183
+      },
+      {
+        "date": "2026-08-12",
+        "units": 11497
+      },
+      {
+        "date": "2026-08-13",
+        "units": 13659
+      },
+      {
+        "date": "2026-08-14",
+        "units": 13898
+      },
+      {
+        "date": "2026-08-15",
+        "units": 6357
+      },
+      {
+        "date": "2026-08-16",
+        "units": 4201
+      },
+      {
+        "date": "2026-08-17",
+        "units": 15386
+      },
+      {
+        "date": "2026-08-18",
+        "units": 12754
+      },
+      {
+        "date": "2026-08-19",
+        "units": 11328
+      },
+      {
+        "date": "2026-08-20",
+        "units": 15400
+      },
+      {
+        "date": "2026-08-21",
+        "units": 17822
+      },
+      {
+        "date": "2026-08-22",
+        "units": 7605
+      },
+      {
+        "date": "2026-08-23",
+        "units": 4256
+      },
+      {
+        "date": "2026-08-24",
+        "units": 15198
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-019"
+  },
+  {
+    "id": "OPP-020",
+    "customer": "E.Leclerc · Occitanie",
+    "initials": "EL",
+    "region": "France · Occitanie",
+    "category": "Writing",
+    "product": "BIC 4 Colours",
+    "variant": "Original · assortment",
+    "sku": "DEMO-4C-12",
+    "color": "#479fcd",
+    "coverage_days": 2.990112063282795,
+    "lead_days": 3,
+    "promo_uplift": 0.2,
+    "delay_days": 0,
+    "volatility": 0.27,
+    "daily_units_28d": 3034,
+    "season_index": 1.12,
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "order_units": 26244,
+    "stock_units": 9072,
+    "alternate_available": 17916,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 517,
+    "retailer": "E.Leclerc",
+    "region_code": "76",
+    "region_name": "Occitanie",
+    "photo_key": "four-colours",
+    "daily_profile": [
+      1.1,
+      0.95,
+      1.2,
+      1.65,
+      0.6,
+      0.3,
+      1.3
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 3283
+      },
+      {
+        "date": "2026-08-12",
+        "units": 2934
+      },
+      {
+        "date": "2026-08-13",
+        "units": 3453
+      },
+      {
+        "date": "2026-08-14",
+        "units": 3717
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1760
+      },
+      {
+        "date": "2026-08-16",
+        "units": 1122
+      },
+      {
+        "date": "2026-08-17",
+        "units": 3901
+      },
+      {
+        "date": "2026-08-18",
+        "units": 3244
+      },
+      {
+        "date": "2026-08-19",
+        "units": 3061
+      },
+      {
+        "date": "2026-08-20",
+        "units": 4255
+      },
+      {
+        "date": "2026-08-21",
+        "units": 4713
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1919
+      },
+      {
+        "date": "2026-08-23",
+        "units": 1091
+      },
+      {
+        "date": "2026-08-24",
+        "units": 4143
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-020"
+  },
+  {
+    "id": "OPP-021",
+    "customer": "Monoprix · Occitanie",
+    "initials": "MP",
+    "region": "France · Occitanie",
+    "category": "Lighters",
+    "product": "BIC Maxi",
+    "variant": "Couleurs classiques",
+    "sku": "DEMO-MAXI-50",
+    "color": "#ee8641",
+    "coverage_days": 1.6031280547409579,
+    "lead_days": 2,
+    "promo_uplift": 0.1,
+    "delay_days": 0,
+    "volatility": 0.38,
+    "daily_units_28d": 8184,
+    "season_index": 1.03,
+    "unit_price": 0.72,
+    "margin_rate": 0.3,
+    "order_units": 64450,
+    "stock_units": 13120,
+    "alternate_available": 15450,
+    "pack_size": 1200,
+    "transfer_days": 3,
+    "freight": 473,
+    "retailer": "Monoprix",
+    "region_code": "76",
+    "region_name": "Occitanie",
+    "photo_key": "maxi",
+    "daily_profile": [
+      1.1,
+      1.25,
+      1.6,
+      1.15,
+      0.5,
+      0.3,
+      1.25
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 8773
+      },
+      {
+        "date": "2026-08-12",
+        "units": 7544
+      },
+      {
+        "date": "2026-08-13",
+        "units": 9163
+      },
+      {
+        "date": "2026-08-14",
+        "units": 10449
+      },
+      {
+        "date": "2026-08-15",
+        "units": 4917
+      },
+      {
+        "date": "2026-08-16",
+        "units": 2969
+      },
+      {
+        "date": "2026-08-17",
+        "units": 10030
+      },
+      {
+        "date": "2026-08-18",
+        "units": 8701
+      },
+      {
+        "date": "2026-08-19",
+        "units": 8642
+      },
+      {
+        "date": "2026-08-20",
+        "units": 11801
+      },
+      {
+        "date": "2026-08-21",
+        "units": 12369
+      },
+      {
+        "date": "2026-08-22",
+        "units": 4944
+      },
+      {
+        "date": "2026-08-23",
+        "units": 2960
+      },
+      {
+        "date": "2026-08-24",
+        "units": 11724
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-021"
+  },
+  {
+    "id": "OPP-022",
+    "customer": "Auchan · Auvergne-Rhône-Alpes",
+    "initials": "AU",
+    "region": "France · Auvergne-Rhône-Alpes",
+    "category": "Writing",
+    "product": "BIC Kids Evolution",
+    "variant": "Crayons · 12 couleurs",
+    "sku": "DEMO-KIDS-12",
+    "color": "#50a67f",
+    "coverage_days": 3.677345537757437,
+    "lead_days": 3,
+    "promo_uplift": 0.25,
+    "delay_days": 0,
+    "volatility": 0.22,
+    "daily_units_28d": 2185,
+    "season_index": 1.1,
+    "unit_price": 1.8,
+    "margin_rate": 0.29,
+    "order_units": 18204,
+    "stock_units": 8035,
+    "alternate_available": 9060,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 267,
+    "retailer": "Auchan",
+    "region_code": "84",
+    "region_name": "Auvergne-Rhône-Alpes",
+    "photo_key": "kids",
+    "daily_profile": [
+      0.95,
+      1.6,
+      1.35,
+      1.2,
+      0.55,
+      0.3,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 2258
+      },
+      {
+        "date": "2026-08-12",
+        "units": 1935
+      },
+      {
+        "date": "2026-08-13",
+        "units": 2492
+      },
+      {
+        "date": "2026-08-14",
+        "units": 2925
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1323
+      },
+      {
+        "date": "2026-08-16",
+        "units": 760
+      },
+      {
+        "date": "2026-08-17",
+        "units": 2591
+      },
+      {
+        "date": "2026-08-18",
+        "units": 2389
+      },
+      {
+        "date": "2026-08-19",
+        "units": 2413
+      },
+      {
+        "date": "2026-08-20",
+        "units": 3144
+      },
+      {
+        "date": "2026-08-21",
+        "units": 3153
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1289
+      },
+      {
+        "date": "2026-08-23",
+        "units": 819
+      },
+      {
+        "date": "2026-08-24",
+        "units": 3258
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-022"
+  },
+  {
+    "id": "OPP-023",
+    "customer": "Carrefour · Provence-Alpes-Côte d'Azur",
+    "initials": "CF",
+    "region": "France · Provence-Alpes-Côte d'Azur",
+    "category": "Shaving",
+    "product": "BIC Flex 3",
+    "variant": "Rasoirs · pack de 3",
+    "sku": "DEMO-FLEX3-3",
+    "color": "#608abe",
+    "coverage_days": 2.141812865497076,
+    "lead_days": 2,
+    "promo_uplift": 0.45,
+    "delay_days": 0,
+    "volatility": 0.18,
+    "daily_units_28d": 2052,
+    "season_index": 1.0,
+    "unit_price": 2.1,
+    "margin_rate": 0.27,
+    "order_units": 15651,
+    "stock_units": 4395,
+    "alternate_available": 7779,
+    "pack_size": 600,
+    "transfer_days": 2,
+    "freight": 243,
+    "retailer": "Carrefour",
+    "region_code": "93",
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "photo_key": "flex3",
+    "daily_profile": [
+      1.35,
+      1.15,
+      0.95,
+      1.5,
+      0.65,
+      0.4,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 2021
+      },
+      {
+        "date": "2026-08-12",
+        "units": 1796
+      },
+      {
+        "date": "2026-08-13",
+        "units": 2445
+      },
+      {
+        "date": "2026-08-14",
+        "units": 2836
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1214
+      },
+      {
+        "date": "2026-08-16",
+        "units": 681
+      },
+      {
+        "date": "2026-08-17",
+        "units": 2432
+      },
+      {
+        "date": "2026-08-18",
+        "units": 2352
+      },
+      {
+        "date": "2026-08-19",
+        "units": 2321
+      },
+      {
+        "date": "2026-08-20",
+        "units": 2862
+      },
+      {
+        "date": "2026-08-21",
+        "units": 2834
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1223
+      },
+      {
+        "date": "2026-08-23",
+        "units": 807
+      },
+      {
+        "date": "2026-08-24",
+        "units": 3105
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-023"
+  },
+  {
+    "id": "OPP-024",
+    "customer": "METRO · Provence-Alpes-Côte d'Azur",
+    "initials": "ME",
+    "region": "France · Provence-Alpes-Côte d'Azur",
+    "category": "Writing",
+    "product": "BIC Cristal Original",
+    "variant": "Blue · box of 50",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "color": "#343942",
+    "coverage_days": 2.9118773946360155,
+    "lead_days": 3,
+    "promo_uplift": 0.15,
+    "delay_days": 0,
+    "volatility": 0.2,
+    "daily_units_28d": 2610,
+    "season_index": 1.1,
+    "unit_price": 0.3,
+    "margin_rate": 0.31,
+    "order_units": 20850,
+    "stock_units": 7600,
+    "alternate_available": 14650,
+    "pack_size": 1200,
+    "transfer_days": 2,
+    "freight": 377,
+    "retailer": "METRO",
+    "region_code": "93",
+    "region_name": "Provence-Alpes-Côte d'Azur",
+    "photo_key": "cristal",
+    "daily_profile": [
+      1.1,
+      0.95,
+      1.2,
+      1.65,
+      0.6,
+      0.3,
+      1.3
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 2477
+      },
+      {
+        "date": "2026-08-12",
+        "units": 2338
+      },
+      {
+        "date": "2026-08-13",
+        "units": 3257
+      },
+      {
+        "date": "2026-08-14",
+        "units": 3619
+      },
+      {
+        "date": "2026-08-15",
+        "units": 1477
+      },
+      {
+        "date": "2026-08-16",
+        "units": 841
+      },
+      {
+        "date": "2026-08-17",
+        "units": 3194
+      },
+      {
+        "date": "2026-08-18",
+        "units": 3122
+      },
+      {
+        "date": "2026-08-19",
+        "units": 2932
+      },
+      {
+        "date": "2026-08-20",
+        "units": 3473
+      },
+      {
+        "date": "2026-08-21",
+        "units": 3534
+      },
+      {
+        "date": "2026-08-22",
+        "units": 1618
+      },
+      {
+        "date": "2026-08-23",
+        "units": 1066
+      },
+      {
+        "date": "2026-08-24",
+        "units": 3887
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-024"
+  },
+  {
+    "id": "OPP-025",
+    "customer": "E.Leclerc · Corse",
+    "initials": "EL",
+    "region": "France · Corse",
+    "category": "Writing",
+    "product": "BIC Cristal Original",
+    "variant": "Blue · box of 50",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "color": "#2263bf",
+    "coverage_days": 1.0080645161290323,
+    "lead_days": 2,
+    "promo_uplift": 0.3,
+    "delay_days": 0,
+    "volatility": 0.3,
+    "daily_units_28d": 4712,
+    "season_index": 1.15,
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "order_units": 46450,
+    "stock_units": 4750,
+    "alternate_available": 33250,
+    "pack_size": 1200,
+    "transfer_days": 4,
+    "freight": 737,
+    "retailer": "E.Leclerc",
+    "region_code": "94",
+    "region_name": "Corse",
+    "photo_key": "cristal",
+    "daily_profile": [
+      1.1,
+      1.25,
+      1.6,
+      1.15,
+      0.5,
+      0.3,
+      1.25
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 4443
+      },
+      {
+        "date": "2026-08-12",
+        "units": 4418
+      },
+      {
+        "date": "2026-08-13",
+        "units": 6049
+      },
+      {
+        "date": "2026-08-14",
+        "units": 6361
+      },
+      {
+        "date": "2026-08-15",
+        "units": 2547
+      },
+      {
+        "date": "2026-08-16",
+        "units": 1525
+      },
+      {
+        "date": "2026-08-17",
+        "units": 6048
+      },
+      {
+        "date": "2026-08-18",
+        "units": 5750
+      },
+      {
+        "date": "2026-08-19",
+        "units": 5115
+      },
+      {
+        "date": "2026-08-20",
+        "units": 6013
+      },
+      {
+        "date": "2026-08-21",
+        "units": 6480
+      },
+      {
+        "date": "2026-08-22",
+        "units": 3064
+      },
+      {
+        "date": "2026-08-23",
+        "units": 1945
+      },
+      {
+        "date": "2026-08-24",
+        "units": 6738
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-025"
+  },
+  {
+    "id": "OPP-026",
+    "customer": "Coopérative U · Corse",
+    "initials": "CU",
+    "region": "France · Corse",
+    "category": "Writing",
+    "product": "BIC 4 Colours",
+    "variant": "Original · assortment",
+    "sku": "DEMO-4C-12",
+    "color": "#479fcd",
+    "coverage_days": 4.431924882629108,
+    "lead_days": 3,
+    "promo_uplift": 0.5,
+    "delay_days": 0,
+    "volatility": 0.27,
+    "daily_units_28d": 1278,
+    "season_index": 1.12,
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "order_units": 11244,
+    "stock_units": 5664,
+    "alternate_available": 7332,
+    "pack_size": 600,
+    "transfer_days": 4,
+    "freight": 677,
+    "retailer": "Coopérative U",
+    "region_code": "94",
+    "region_name": "Corse",
+    "photo_key": "four-colours",
+    "daily_profile": [
+      0.95,
+      1.6,
+      1.35,
+      1.2,
+      0.55,
+      0.3,
+      1.05
+    ],
+    "promotion_daily_weights": [
+      0.2,
+      0.55,
+      1,
+      0.5,
+      0,
+      0,
+      0.75
+    ],
+    "daily_history": [
+      {
+        "date": "2026-08-11",
+        "units": 1239
+      },
+      {
+        "date": "2026-08-12",
+        "units": 1253
+      },
+      {
+        "date": "2026-08-13",
+        "units": 1639
+      },
+      {
+        "date": "2026-08-14",
+        "units": 1648
+      },
+      {
+        "date": "2026-08-15",
+        "units": 674
+      },
+      {
+        "date": "2026-08-16",
+        "units": 429
+      },
+      {
+        "date": "2026-08-17",
+        "units": 1708
+      },
+      {
+        "date": "2026-08-18",
+        "units": 1542
+      },
+      {
+        "date": "2026-08-19",
+        "units": 1322
+      },
+      {
+        "date": "2026-08-20",
+        "units": 1607
+      },
+      {
+        "date": "2026-08-21",
+        "units": 1833
+      },
+      {
+        "date": "2026-08-22",
+        "units": 860
+      },
+      {
+        "date": "2026-08-23",
+        "units": 517
+      },
+      {
+        "date": "2026-08-24",
+        "units": 1742
+      }
+    ],
+    "unit_definition": "Unité de comptage du scénario ; respecter le multiple logistique de la référence.",
+    "coverage_basis": "Stock alloué au compte / moyenne journalière des commandes sur 28 jours, hors réceptions futures.",
+    "inventory_pool_id": "POOL-OPP-026"
+  }
+]

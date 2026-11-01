@@ -1,0 +1,47 @@
+[
+  {
+    "key": "cristal",
+    "name": "BIC Cristal Original",
+    "path": "assets/products/cristal.jpg",
+    "source": "https://www.123ink.ie/BIC-Cristal-blue-ballpoint-pen-50-pack-8373609-i26084-t472745.html",
+    "image_url": "https://www.123ink.ie/image/BIC_Cristal_blue_ballpoint_pen_50-pack_8373609_224608_m1_big.jpg",
+    "delivery": "local",
+    "note": "Product range photograph; illustrative commercial packaging."
+  },
+  {
+    "key": "four-colours",
+    "name": "BIC 4 Colours",
+    "path": "assets/products/four-colours.jpg",
+    "source": "https://www.wesco.fr/54573020-stylos-bille-4-couleurs-original-bic.html",
+    "image_url": "https://static.wesco.fr/media/catalog/product/cache/7ccc10e5a8277e9f8854785247b9d41d/5/4/54573_c020_221208_1d.jpg",
+    "delivery": "local",
+    "note": "Product range photograph; illustrative commercial packaging."
+  },
+  {
+    "key": "maxi",
+    "name": "BIC Maxi",
+    "path": "https://a.fsimg.co.nz/product/retail/fan/image/master/5001460.png",
+    "source": "https://www.paknsave.co.nz/shop/product/5001460_ea_000pns?name=bic-maxi-lighter",
+    "image_url": "https://a.fsimg.co.nz/product/retail/fan/image/master/5001460.png",
+    "delivery": "remote",
+    "note": "Product range photograph; illustrative commercial packaging."
+  },
+  {
+    "key": "kids",
+    "name": "BIC Kids Evolution",
+    "path": "https://www.sanatsalkirtasiye.com/bic-evolution-kuru-boya-12-renk-karton-kutu-82902914-kuru-boyalar-bic-82902914-16969-16-B.jpg",
+    "source": "https://www.sanatsalkirtasiye.com/bic-evolution-kuru-boya-12-renk-karton-kutu-82902914",
+    "image_url": "https://www.sanatsalkirtasiye.com/bic-evolution-kuru-boya-12-renk-karton-kutu-82902914-kuru-boyalar-bic-82902914-16969-16-B.jpg",
+    "delivery": "remote",
+    "note": "Product range photograph; illustrative commercial packaging."
+  },
+  {
+    "key": "flex3",
+    "name": "BIC Flex 3",
+    "path": "https://www.brandactiv.mu/images/interface/bic-flex3.png",
+    "source": "https://www.brandactiv.mu/bicshavers",
+    "image_url": "https://www.brandactiv.mu/images/interface/bic-flex3.png",
+    "delivery": "remote",
+    "note": "Product range photograph; illustrative commercial packaging."
+  }
+]

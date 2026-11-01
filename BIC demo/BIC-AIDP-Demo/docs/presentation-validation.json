@@ -1,0 +1,10 @@
+{
+  "presentation": "presentation/BIC_AIDP_25min_EN.pptx",
+  "sha256": "d25c38754a826c9bd4a0eb256968cbbe88cea2e85e91ef787bca743cb476c2a1",
+  "bytes": 5121479,
+  "slide_count": 8,
+  "package_integrity": "pass",
+  "layout_findings": 0,
+  "first_party_import_passed": true,
+  "native_powerpoint_rendering_verified": false
+}

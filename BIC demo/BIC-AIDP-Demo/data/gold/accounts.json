@@ -1,0 +1,3600 @@
+[
+  {
+    "case_id": "OPP-001",
+    "promo_pct": 35,
+    "delay_days": 4,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "03b5ab8e9addc8c0bfdd12655e20fb2f31a3dcfeeeaa4bd744203065dcf614c2",
+    "customer": "Carrefour · Hauts-de-France",
+    "retailer": "Carrefour",
+    "region": "Hauts-de-France",
+    "region_code": "32",
+    "product": "BIC Cristal Original",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "photo_key": "cristal",
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "firm_units": 97350,
+    "allocated_units": 64100,
+    "future_receipts_by_due": 18150,
+    "available_by_due": 82250,
+    "firm_shortfall": 15100,
+    "forecast_end_shortfall": 21275,
+    "peak_shortfall": 21275,
+    "short_days": 2,
+    "short_dates": [
+      "2026-08-30",
+      "2026-08-31"
+    ],
+    "recovery_date": null,
+    "receipt_date": "2026-09-01",
+    "original_receipt_date": "2026-08-28",
+    "receipt_units": 26500,
+    "event": "The 28 August transport slot was cancelled. The next confirmed slot is 1 September. In-transit inventory is not counted as received.",
+    "event_reference": "DEMO-EVT-001",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 64100,
+        "gap": 64100
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 14240,
+        "receipts": 18150,
+        "demand": 14240,
+        "supply": 82250,
+        "gap": 68010
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 18034,
+        "receipts": 0,
+        "demand": 32274,
+        "supply": 82250,
+        "gap": 49976
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 26132,
+        "receipts": 0,
+        "demand": 58406,
+        "supply": 82250,
+        "gap": 23844
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 16348,
+        "receipts": 0,
+        "demand": 74754,
+        "supply": 82250,
+        "gap": 7496
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 6049,
+        "receipts": 0,
+        "demand": 80803,
+        "supply": 82250,
+        "gap": 1447
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 3629,
+        "receipts": 0,
+        "demand": 84432,
+        "supply": 82250,
+        "gap": -2182
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 19093,
+        "receipts": 0,
+        "demand": 103525,
+        "supply": 82250,
+        "gap": -21275
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 74850,
+    "donor_reserved": 36900,
+    "donor_safety": 12300,
+    "mobilizable": 25650,
+    "pack_size": 1200,
+    "risk": 0.5472746461246784,
+    "learned_forecast_units": 103525,
+    "forecast_units": 103525,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 0.6066,
+        "raw_value": 6.41
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.244,
+        "raw_value": 4
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.1639,
+        "raw_value": 0.35
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": 0.9177,
+        "raw_value": 4
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.0653,
+        "raw_value": 0.3
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-002",
+    "promo_pct": 40,
+    "delay_days": 2,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "acea7a5ff0dee5b2b82017dd1a317cfe42305ca320cfca1da3750bc7bb3f8539",
+    "customer": "E.Leclerc · Île-de-France",
+    "retailer": "E.Leclerc",
+    "region": "Île-de-France",
+    "region_code": "11",
+    "product": "BIC 4 Colours",
+    "sku": "DEMO-4C-12",
+    "photo_key": "four-colours",
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "firm_units": 35916,
+    "allocated_units": 18984,
+    "future_receipts_by_due": 25464,
+    "available_by_due": 44448,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 5280,
+    "short_days": 1,
+    "short_dates": [
+      "2026-08-27"
+    ],
+    "recovery_date": "2026-08-28",
+    "receipt_date": "2026-08-28",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 25296,
+    "event": "A quality release moved the main receipt from 26 to 28 August. The receipt is planned, not yet physically received.",
+    "event_reference": "DEMO-EVT-002",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 18984,
+        "gap": 18984
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 5149,
+        "receipts": 168,
+        "demand": 5149,
+        "supply": 19152,
+        "gap": 14003
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 9797,
+        "receipts": 0,
+        "demand": 14946,
+        "supply": 19152,
+        "gap": 4206
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 9486,
+        "receipts": 0,
+        "demand": 24432,
+        "supply": 19152,
+        "gap": -5280
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 7227,
+        "receipts": 25296,
+        "demand": 31659,
+        "supply": 44448,
+        "gap": 12789
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 2760,
+        "receipts": 0,
+        "demand": 34419,
+        "supply": 44448,
+        "gap": 10029
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 1506,
+        "receipts": 0,
+        "demand": 35925,
+        "supply": 44448,
+        "gap": 8523
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 6851,
+        "receipts": 0,
+        "demand": 42776,
+        "supply": 44448,
+        "gap": 1672
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 24804,
+    "donor_reserved": 672,
+    "donor_safety": 6000,
+    "mobilizable": 18132,
+    "pack_size": 600,
+    "risk": 0.3792853258749157,
+    "learned_forecast_units": 42776,
+    "forecast_units": 42776,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 1.7483,
+        "raw_value": 4.630243902439024
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.3247,
+        "raw_value": 0.4
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.0116,
+        "raw_value": 2
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.1419,
+        "raw_value": 0.27
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-003",
+    "promo_pct": 20,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "fca8b622958693a65131c9029b13e15907ec049953572c1293c0b34387919282",
+    "customer": "Intermarché · Auvergne-Rhône-Alpes",
+    "retailer": "Intermarché",
+    "region": "Auvergne-Rhône-Alpes",
+    "region_code": "84",
+    "product": "BIC Maxi",
+    "sku": "DEMO-MAXI-50",
+    "photo_key": "maxi",
+    "unit_price": 0.72,
+    "margin_rate": 0.3,
+    "firm_units": 48450,
+    "allocated_units": 12257,
+    "future_receipts_by_due": 41756,
+    "available_by_due": 54013,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 41756,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-003",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 12257,
+        "gap": 12257
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 9408,
+        "receipts": 0,
+        "demand": 9408,
+        "supply": 12257,
+        "gap": 2849
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 8554,
+        "receipts": 41756,
+        "demand": 17962,
+        "supply": 54013,
+        "gap": 36051
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 7639,
+        "receipts": 0,
+        "demand": 25601,
+        "supply": 54013,
+        "gap": 28412
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 11057,
+        "receipts": 0,
+        "demand": 36658,
+        "supply": 54013,
+        "gap": 17355
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 4356,
+        "receipts": 0,
+        "demand": 41014,
+        "supply": 54013,
+        "gap": 12999
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 2680,
+        "receipts": 0,
+        "demand": 43694,
+        "supply": 54013,
+        "gap": 10319
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 8092,
+        "receipts": 0,
+        "demand": 51786,
+        "supply": 54013,
+        "gap": 2227
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 15500,
+    "donor_reserved": 2950,
+    "donor_safety": 3600,
+    "mobilizable": 8950,
+    "pack_size": 1200,
+    "risk": 0.47947459462716796,
+    "learned_forecast_units": 51786,
+    "forecast_units": 51786,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 3.4504,
+        "raw_value": 1.9769354838709678
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.3184,
+        "raw_value": 0.2
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": 0.1388,
+        "raw_value": 0.38
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-004",
+    "promo_pct": 30,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "0f723dbdeb18e394bb18de8381382531167e1bb24f7a63c3dd9da4d62b419af8",
+    "customer": "Bureau Vallée · Normandie",
+    "retailer": "Bureau Vallée",
+    "region": "Normandie",
+    "region_code": "28",
+    "product": "BIC Kids Evolution",
+    "sku": "DEMO-KIDS-12",
+    "photo_key": "kids",
+    "unit_price": 1.8,
+    "margin_rate": 0.29,
+    "firm_units": 19116,
+    "allocated_units": 7052,
+    "future_receipts_by_due": 15923,
+    "available_by_due": 22975,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 15923,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-004",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 7052,
+        "gap": 7052
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 3111,
+        "receipts": 0,
+        "demand": 3111,
+        "supply": 7052,
+        "gap": 3941
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 2953,
+        "receipts": 0,
+        "demand": 6064,
+        "supply": 7052,
+        "gap": 988
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 4163,
+        "receipts": 15923,
+        "demand": 10227,
+        "supply": 22975,
+        "gap": 12748
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 5064,
+        "receipts": 0,
+        "demand": 15291,
+        "supply": 22975,
+        "gap": 7684
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 1601,
+        "receipts": 0,
+        "demand": 16892,
+        "supply": 22975,
+        "gap": 6083
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 801,
+        "receipts": 0,
+        "demand": 17693,
+        "supply": 22975,
+        "gap": 5282
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 4250,
+        "receipts": 0,
+        "demand": 21943,
+        "supply": 22975,
+        "gap": 1032
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 11124,
+    "donor_reserved": 1464,
+    "donor_safety": 2400,
+    "mobilizable": 7260,
+    "pack_size": 600,
+    "risk": 0.40658907526797017,
+    "learned_forecast_units": 21943,
+    "forecast_units": 21943,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.7517,
+        "raw_value": 3.066086956521739
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.0032,
+        "raw_value": 0.3
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.2695,
+        "raw_value": 0.22
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-005",
+    "promo_pct": 10,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "05d8e3b4f7f3b6e073cb76f889f70a2c38dbe5501a7408db8cced7bfae00a934",
+    "customer": "Auchan · Grand Est",
+    "retailer": "Auchan",
+    "region": "Grand Est",
+    "region_code": "44",
+    "product": "BIC Flex 3",
+    "sku": "DEMO-FLEX3-3",
+    "photo_key": "flex3",
+    "unit_price": 2.1,
+    "margin_rate": 0.27,
+    "firm_units": 14379,
+    "allocated_units": 2856,
+    "future_receipts_by_due": 12027,
+    "available_by_due": 14883,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 12027,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-005",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 2856,
+        "gap": 2856
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 2136,
+        "receipts": 0,
+        "demand": 2136,
+        "supply": 2856,
+        "gap": 720
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 2511,
+        "receipts": 12027,
+        "demand": 4647,
+        "supply": 14883,
+        "gap": 10236
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 3351,
+        "receipts": 0,
+        "demand": 7998,
+        "supply": 14883,
+        "gap": 6885
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 2299,
+        "receipts": 0,
+        "demand": 10297,
+        "supply": 14883,
+        "gap": 4586
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 952,
+        "receipts": 0,
+        "demand": 11249,
+        "supply": 14883,
+        "gap": 3634
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 571,
+        "receipts": 0,
+        "demand": 11820,
+        "supply": 14883,
+        "gap": 3063
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 2559,
+        "receipts": 0,
+        "demand": 14379,
+        "supply": 14883,
+        "gap": 504
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 7542,
+    "donor_reserved": 363,
+    "donor_safety": 1200,
+    "mobilizable": 5979,
+    "pack_size": 600,
+    "risk": 0.35205341243850136,
+    "learned_forecast_units": 14332,
+    "forecast_units": 14379,
+    "firm_floor_applied": true,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 3.7544,
+        "raw_value": 1.503157894736842
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.6399,
+        "raw_value": 0.1
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.3715,
+        "raw_value": 0.18
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-006",
+    "promo_pct": 5,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "80ce6b01228b2d4384af9d4ce7ddc919ca083b524e34823c6d5ede69f774ae5d",
+    "customer": "Coopérative U · Centre-Val de Loire",
+    "retailer": "Coopérative U",
+    "region": "Centre-Val de Loire",
+    "region_code": "24",
+    "product": "BIC Cristal Original",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "photo_key": "cristal",
+    "unit_price": 0.3,
+    "margin_rate": 0.31,
+    "firm_units": 35650,
+    "allocated_units": 15050,
+    "future_receipts_by_due": 22400,
+    "available_by_due": 37450,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 22400,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-006",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 15050,
+        "gap": 15050
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 4807,
+        "receipts": 0,
+        "demand": 4807,
+        "supply": 15050,
+        "gap": 10243
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 8236,
+        "receipts": 0,
+        "demand": 13043,
+        "supply": 15050,
+        "gap": 2007
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 7102,
+        "receipts": 22400,
+        "demand": 20145,
+        "supply": 37450,
+        "gap": 17305
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 6162,
+        "receipts": 0,
+        "demand": 26307,
+        "supply": 37450,
+        "gap": 11143
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 2756,
+        "receipts": 0,
+        "demand": 29063,
+        "supply": 37450,
+        "gap": 8387
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 1503,
+        "receipts": 0,
+        "demand": 30566,
+        "supply": 37450,
+        "gap": 6884
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 5458,
+        "receipts": 0,
+        "demand": 36024,
+        "supply": 37450,
+        "gap": 1426
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 29000,
+    "donor_reserved": 5350,
+    "donor_safety": 6000,
+    "mobilizable": 17650,
+    "pack_size": 1200,
+    "risk": 0.1959967144721616,
+    "learned_forecast_units": 36024,
+    "forecast_units": 36024,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.5732,
+        "raw_value": 3.3444444444444446
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.8007,
+        "raw_value": 0.05
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.3205,
+        "raw_value": 0.2
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-007",
+    "promo_pct": 10,
+    "delay_days": 3,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "c99d682fac5a40f45110a83071d69574ba1738aa526e19e2c6c765106ae5ee64",
+    "customer": "Monoprix · Île-de-France",
+    "retailer": "Monoprix",
+    "region": "Île-de-France",
+    "region_code": "11",
+    "product": "BIC Cristal Original",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "photo_key": "cristal",
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "firm_units": 61150,
+    "allocated_units": 9750,
+    "future_receipts_by_due": 54050,
+    "available_by_due": 63800,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 17155,
+    "short_days": 2,
+    "short_dates": [
+      "2026-08-26",
+      "2026-08-27"
+    ],
+    "recovery_date": "2026-08-28",
+    "receipt_date": "2026-08-28",
+    "original_receipt_date": "2026-08-25",
+    "receipt_units": 50870,
+    "event": "Packing completion was delayed. The main receipt moved from 25 to 28 August.",
+    "event_reference": "DEMO-EVT-007",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 9750,
+        "gap": 9750
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 11396,
+        "receipts": 3180,
+        "demand": 11396,
+        "supply": 12930,
+        "gap": 1534
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 10041,
+        "receipts": 0,
+        "demand": 21437,
+        "supply": 12930,
+        "gap": -8507
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 8648,
+        "receipts": 0,
+        "demand": 30085,
+        "supply": 12930,
+        "gap": -17155
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 13035,
+        "receipts": 50870,
+        "demand": 43120,
+        "supply": 63800,
+        "gap": 20680
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 5379,
+        "receipts": 0,
+        "demand": 48499,
+        "supply": 63800,
+        "gap": 15301
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 3310,
+        "receipts": 0,
+        "demand": 51809,
+        "supply": 63800,
+        "gap": 11991
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 9341,
+        "receipts": 0,
+        "demand": 61150,
+        "supply": 63800,
+        "gap": 2650
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 47900,
+    "donor_reserved": 3250,
+    "donor_safety": 10800,
+    "mobilizable": 33850,
+    "pack_size": 1200,
+    "risk": 0.6355430967859035,
+    "learned_forecast_units": 53735,
+    "forecast_units": 61150,
+    "firm_floor_applied": true,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 3.7098,
+        "raw_value": 1.5725806451612903
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.7123,
+        "raw_value": 1
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.6399,
+        "raw_value": 0.1
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": 0.4531,
+        "raw_value": 3
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.0653,
+        "raw_value": 0.3
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-008",
+    "promo_pct": 25,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "0241cda65bf921fd12afd92b28ffa48f3629bd9013c3de568834378141d6b0bb",
+    "customer": "Carrefour · Centre-Val de Loire",
+    "retailer": "Carrefour",
+    "region": "Centre-Val de Loire",
+    "region_code": "24",
+    "product": "BIC 4 Colours",
+    "sku": "DEMO-4C-12",
+    "photo_key": "four-colours",
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "firm_units": 32076,
+    "allocated_units": 11112,
+    "future_receipts_by_due": 24336,
+    "available_by_due": 35448,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 24336,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-008",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 11112,
+        "gap": 11112
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 4865,
+        "receipts": 0,
+        "demand": 4865,
+        "supply": 11112,
+        "gap": 6247
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 4552,
+        "receipts": 0,
+        "demand": 9417,
+        "supply": 11112,
+        "gap": 1695
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 6318,
+        "receipts": 24336,
+        "demand": 15735,
+        "supply": 35448,
+        "gap": 19713
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 7819,
+        "receipts": 0,
+        "demand": 23554,
+        "supply": 35448,
+        "gap": 11894
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 2527,
+        "receipts": 0,
+        "demand": 26081,
+        "supply": 35448,
+        "gap": 9367
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 1264,
+        "receipts": 0,
+        "demand": 27345,
+        "supply": 35448,
+        "gap": 8103
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 6502,
+        "receipts": 0,
+        "demand": 33847,
+        "supply": 35448,
+        "gap": 1601
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 21888,
+    "donor_reserved": 756,
+    "donor_safety": 5400,
+    "mobilizable": 15732,
+    "pack_size": 600,
+    "risk": 0.3964951278845183,
+    "learned_forecast_units": 33847,
+    "forecast_units": 33847,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.7429,
+        "raw_value": 3.079822616407982
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.1576,
+        "raw_value": 0.25
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.1419,
+        "raw_value": 0.27
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-009",
+    "promo_pct": 45,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "a47c130b59a9223af8d4f8bf0b9155c33ea03cfb2dd8e2c22d6a6d5db19e3cfd",
+    "customer": "E.Leclerc · Bourgogne-Franche-Comté",
+    "retailer": "E.Leclerc",
+    "region": "Bourgogne-Franche-Comté",
+    "region_code": "27",
+    "product": "BIC Maxi",
+    "sku": "DEMO-MAXI-50",
+    "photo_key": "maxi",
+    "unit_price": 0.72,
+    "margin_rate": 0.3,
+    "firm_units": 54550,
+    "allocated_units": 13424,
+    "future_receipts_by_due": 60154,
+    "available_by_due": 73578,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 60154,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-009",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 13424,
+        "gap": 13424
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 9514,
+        "receipts": 0,
+        "demand": 9514,
+        "supply": 13424,
+        "gap": 3910
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 12374,
+        "receipts": 60154,
+        "demand": 21888,
+        "supply": 73578,
+        "gap": 51690
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 18409,
+        "receipts": 0,
+        "demand": 40297,
+        "supply": 73578,
+        "gap": 33281
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 11178,
+        "receipts": 0,
+        "demand": 51475,
+        "supply": 73578,
+        "gap": 22103
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 3967,
+        "receipts": 0,
+        "demand": 55442,
+        "supply": 73578,
+        "gap": 18136
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 2381,
+        "receipts": 0,
+        "demand": 57823,
+        "supply": 73578,
+        "gap": 15755
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 13266,
+        "receipts": 0,
+        "demand": 71089,
+        "supply": 73578,
+        "gap": 2489
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 18550,
+    "donor_reserved": 4800,
+    "donor_safety": 3600,
+    "mobilizable": 10150,
+    "pack_size": 1200,
+    "risk": 0.6861321319957328,
+    "learned_forecast_units": 71089,
+    "forecast_units": 71089,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 3.5109,
+        "raw_value": 1.8827489481065918
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.4854,
+        "raw_value": 0.45
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": 0.1388,
+        "raw_value": 0.38
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-010",
+    "promo_pct": 15,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "7daec52d89f3271c250d2d8b5edc417b4fd1c88244f185d7938a38159a2a8022",
+    "customer": "Intermarché · Bourgogne-Franche-Comté",
+    "retailer": "Intermarché",
+    "region": "Bourgogne-Franche-Comté",
+    "region_code": "27",
+    "product": "BIC Kids Evolution",
+    "sku": "DEMO-KIDS-12",
+    "photo_key": "kids",
+    "unit_price": 1.8,
+    "margin_rate": 0.29,
+    "firm_units": 14244,
+    "allocated_units": 5882,
+    "future_receipts_by_due": 9283,
+    "available_by_due": 15165,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 9283,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-010",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 5882,
+        "gap": 5882
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 1886,
+        "receipts": 0,
+        "demand": 1886,
+        "supply": 5882,
+        "gap": 3996
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 3339,
+        "receipts": 0,
+        "demand": 5225,
+        "supply": 5882,
+        "gap": 657
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 2993,
+        "receipts": 9283,
+        "demand": 8218,
+        "supply": 15165,
+        "gap": 6947
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 2487,
+        "receipts": 0,
+        "demand": 10705,
+        "supply": 15165,
+        "gap": 4460
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 1060,
+        "receipts": 0,
+        "demand": 11765,
+        "supply": 15165,
+        "gap": 3400
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 578,
+        "receipts": 0,
+        "demand": 12343,
+        "supply": 15165,
+        "gap": 2822
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 2252,
+        "receipts": 0,
+        "demand": 14595,
+        "supply": 15165,
+        "gap": 570
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 8640,
+    "donor_reserved": 1380,
+    "donor_safety": 1800,
+    "mobilizable": 5460,
+    "pack_size": 600,
+    "risk": 0.2477833925431652,
+    "learned_forecast_units": 14595,
+    "forecast_units": 14595,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.5016,
+        "raw_value": 3.45593419506463
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.4791,
+        "raw_value": 0.15
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.2695,
+        "raw_value": 0.22
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-011",
+    "promo_pct": 30,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "1c79080c30d3e456c37d6e00401e4069764cb116d426ccc67a416d4bad825402",
+    "customer": "Cultura · Normandie",
+    "retailer": "Cultura",
+    "region": "Normandie",
+    "region_code": "28",
+    "product": "BIC Flex 3",
+    "sku": "DEMO-FLEX3-3",
+    "photo_key": "flex3",
+    "unit_price": 2.1,
+    "margin_rate": 0.27,
+    "firm_units": 19251,
+    "allocated_units": 4959,
+    "future_receipts_by_due": 17784,
+    "available_by_due": 22743,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 17784,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-011",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 4959,
+        "gap": 4959
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 3868,
+        "receipts": 0,
+        "demand": 3868,
+        "supply": 4959,
+        "gap": 1091
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 3621,
+        "receipts": 17784,
+        "demand": 7489,
+        "supply": 22743,
+        "gap": 15254
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 3338,
+        "receipts": 0,
+        "demand": 10827,
+        "supply": 22743,
+        "gap": 11916
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 4662,
+        "receipts": 0,
+        "demand": 15489,
+        "supply": 22743,
+        "gap": 7254
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 1757,
+        "receipts": 0,
+        "demand": 17246,
+        "supply": 22743,
+        "gap": 5497
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 1081,
+        "receipts": 0,
+        "demand": 18327,
+        "supply": 22743,
+        "gap": 4416
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 3477,
+        "receipts": 0,
+        "demand": 21804,
+        "supply": 22743,
+        "gap": 939
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 9870,
+    "donor_reserved": 291,
+    "donor_safety": 2400,
+    "mobilizable": 7179,
+    "pack_size": 600,
+    "risk": 0.43263338497889986,
+    "learned_forecast_units": 21804,
+    "forecast_units": 21804,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 3.4502,
+        "raw_value": 1.9772727272727273
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.0032,
+        "raw_value": 0.3
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.3715,
+        "raw_value": 0.18
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-012",
+    "promo_pct": 50,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "d9e6da5a460e3e6d41222b89d06e45a90b7d3b9f66d28a577e710515a4e99fee",
+    "customer": "Auchan · Hauts-de-France",
+    "retailer": "Auchan",
+    "region": "Hauts-de-France",
+    "region_code": "32",
+    "product": "BIC Cristal Original",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "photo_key": "cristal",
+    "unit_price": 0.3,
+    "margin_rate": 0.31,
+    "firm_units": 34450,
+    "allocated_units": 15300,
+    "future_receipts_by_due": 33950,
+    "available_by_due": 49250,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 33950,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-012",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 15300,
+        "gap": 15300
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 6344,
+        "receipts": 0,
+        "demand": 6344,
+        "supply": 15300,
+        "gap": 8956
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 6351,
+        "receipts": 0,
+        "demand": 12695,
+        "supply": 15300,
+        "gap": 2605
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 9438,
+        "receipts": 33950,
+        "demand": 22133,
+        "supply": 49250,
+        "gap": 27117
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 10814,
+        "receipts": 0,
+        "demand": 32947,
+        "supply": 49250,
+        "gap": 16303
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 3146,
+        "receipts": 0,
+        "demand": 36093,
+        "supply": 49250,
+        "gap": 13157
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 1573,
+        "receipts": 0,
+        "demand": 37666,
+        "supply": 49250,
+        "gap": 11584
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 9373,
+        "receipts": 0,
+        "demand": 47039,
+        "supply": 49250,
+        "gap": 2211
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 26650,
+    "donor_reserved": 3600,
+    "donor_safety": 6000,
+    "mobilizable": 17050,
+    "pack_size": 1200,
+    "risk": 0.47126733113711383,
+    "learned_forecast_units": 47039,
+    "forecast_units": 47039,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.4227,
+        "raw_value": 3.5789473684210527
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.6462,
+        "raw_value": 0.5
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.3205,
+        "raw_value": 0.2
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-013",
+    "promo_pct": 20,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "b07366d0fa103fb835b3f2ef751de61630342482a2e2435031252054ba70db82",
+    "customer": "Carrefour · Grand Est",
+    "retailer": "Carrefour",
+    "region": "Grand Est",
+    "region_code": "44",
+    "product": "BIC Cristal Original",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "photo_key": "cristal",
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "firm_units": 104050,
+    "allocated_units": 10450,
+    "future_receipts_by_due": 97250,
+    "available_by_due": 107700,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 77700,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-013",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 10450,
+        "gap": 10450
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 14965,
+        "receipts": 19550,
+        "demand": 14965,
+        "supply": 30000,
+        "gap": 15035
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 18151,
+        "receipts": 77700,
+        "demand": 33116,
+        "supply": 107700,
+        "gap": 74584
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 25116,
+        "receipts": 0,
+        "demand": 58232,
+        "supply": 107700,
+        "gap": 49468
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 16548,
+        "receipts": 0,
+        "demand": 74780,
+        "supply": 107700,
+        "gap": 32920
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 6541,
+        "receipts": 0,
+        "demand": 81321,
+        "supply": 107700,
+        "gap": 26379
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 3924,
+        "receipts": 0,
+        "demand": 85245,
+        "supply": 107700,
+        "gap": 22455
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 18805,
+        "receipts": 0,
+        "demand": 104050,
+        "supply": 107700,
+        "gap": 3650
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 82400,
+    "donor_reserved": 4750,
+    "donor_safety": 19200,
+    "mobilizable": 58450,
+    "pack_size": 1200,
+    "risk": 0.589341279780679,
+    "learned_forecast_units": 100571,
+    "forecast_units": 104050,
+    "firm_floor_applied": true,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 4.0979,
+        "raw_value": 0.9675925925925926
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.3184,
+        "raw_value": 0.2
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.0653,
+        "raw_value": 0.3
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-014",
+    "promo_pct": 10,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "23d43095c8b703fb993dc9c7a5cc43f40251e0d8fc4a979c24fdb4f219003d6e",
+    "customer": "Coopérative U · Pays de la Loire",
+    "retailer": "Coopérative U",
+    "region": "Pays de la Loire",
+    "region_code": "52",
+    "product": "BIC 4 Colours",
+    "sku": "DEMO-4C-12",
+    "photo_key": "four-colours",
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "firm_units": 21276,
+    "allocated_units": 8064,
+    "future_receipts_by_due": 14052,
+    "available_by_due": 22116,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 13392,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-014",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 8064,
+        "gap": 8064
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 2793,
+        "receipts": 660,
+        "demand": 2793,
+        "supply": 8724,
+        "gap": 5931
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 4866,
+        "receipts": 0,
+        "demand": 7659,
+        "supply": 8724,
+        "gap": 1065
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 4281,
+        "receipts": 13392,
+        "demand": 11940,
+        "supply": 22116,
+        "gap": 10176
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 3632,
+        "receipts": 0,
+        "demand": 15572,
+        "supply": 22116,
+        "gap": 6544
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 1585,
+        "receipts": 0,
+        "demand": 17157,
+        "supply": 22116,
+        "gap": 4959
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 865,
+        "receipts": 0,
+        "demand": 18022,
+        "supply": 22116,
+        "gap": 4094
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 3254,
+        "receipts": 0,
+        "demand": 21276,
+        "supply": 22116,
+        "gap": 840
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 14352,
+    "donor_reserved": 588,
+    "donor_safety": 3600,
+    "mobilizable": 10164,
+    "pack_size": 600,
+    "risk": 0.24935360751284227,
+    "learned_forecast_units": 20047,
+    "forecast_units": 21276,
+    "firm_floor_applied": true,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.5432,
+        "raw_value": 3.391084945332212
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.6399,
+        "raw_value": 0.1
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.1419,
+        "raw_value": 0.27
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-015",
+    "promo_pct": 25,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "cf7d53ffe7eb556d4bdda173b9e7bd91c5758c32e098f267d5930cf738e03444",
+    "customer": "Bureau Vallée · Pays de la Loire",
+    "retailer": "Bureau Vallée",
+    "region": "Pays de la Loire",
+    "region_code": "52",
+    "product": "BIC Maxi",
+    "sku": "DEMO-MAXI-50",
+    "photo_key": "maxi",
+    "unit_price": 0.72,
+    "margin_rate": 0.3,
+    "firm_units": 60850,
+    "allocated_units": 15606,
+    "future_receipts_by_due": 53810,
+    "available_by_due": 69416,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 53810,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-015",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 15606,
+        "gap": 15606
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 11945,
+        "receipts": 0,
+        "demand": 11945,
+        "supply": 15606,
+        "gap": 3661
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 11024,
+        "receipts": 53810,
+        "demand": 22969,
+        "supply": 69416,
+        "gap": 46447
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 10007,
+        "receipts": 0,
+        "demand": 32976,
+        "supply": 69416,
+        "gap": 36440
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 14221,
+        "receipts": 0,
+        "demand": 47197,
+        "supply": 69416,
+        "gap": 22219
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 5478,
+        "receipts": 0,
+        "demand": 52675,
+        "supply": 69416,
+        "gap": 16741
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 3371,
+        "receipts": 0,
+        "demand": 56046,
+        "supply": 69416,
+        "gap": 13370
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 10508,
+        "receipts": 0,
+        "demand": 66554,
+        "supply": 69416,
+        "gap": 2862
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 20000,
+    "donor_reserved": 5350,
+    "donor_safety": 3600,
+    "mobilizable": 11050,
+    "pack_size": 1200,
+    "risk": 0.5111554242835215,
+    "learned_forecast_units": 66554,
+    "forecast_units": 66554,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 3.4164,
+        "raw_value": 2.029916753381894
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.1576,
+        "raw_value": 0.25
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": 0.1388,
+        "raw_value": 0.38
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-016",
+    "promo_pct": 45,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "bb4a614b72eb4ee0541349e0f0f28a3e678055660da976761548f2949e22150b",
+    "customer": "E.Leclerc · Bretagne",
+    "retailer": "E.Leclerc",
+    "region": "Bretagne",
+    "region_code": "53",
+    "product": "BIC Kids Evolution",
+    "sku": "DEMO-KIDS-12",
+    "photo_key": "kids",
+    "unit_price": 1.8,
+    "margin_rate": 0.29,
+    "firm_units": 15804,
+    "allocated_units": 6328,
+    "future_receipts_by_due": 14611,
+    "available_by_due": 20939,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 14611,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-016",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 6328,
+        "gap": 6328
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 2730,
+        "receipts": 0,
+        "demand": 2730,
+        "supply": 6328,
+        "gap": 3598
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 2698,
+        "receipts": 0,
+        "demand": 5428,
+        "supply": 6328,
+        "gap": 900
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 3961,
+        "receipts": 14611,
+        "demand": 9389,
+        "supply": 20939,
+        "gap": 11550
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 4602,
+        "receipts": 0,
+        "demand": 13991,
+        "supply": 20939,
+        "gap": 6948
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 1366,
+        "receipts": 0,
+        "demand": 15357,
+        "supply": 20939,
+        "gap": 5582
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 683,
+        "receipts": 0,
+        "demand": 16040,
+        "supply": 20939,
+        "gap": 4899
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 3959,
+        "receipts": 0,
+        "demand": 19999,
+        "supply": 20939,
+        "gap": 940
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 9252,
+    "donor_reserved": 1392,
+    "donor_safety": 1800,
+    "mobilizable": 6060,
+    "pack_size": 600,
+    "risk": 0.4796887407483093,
+    "learned_forecast_units": 19999,
+    "forecast_units": 19999,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.5662,
+        "raw_value": 3.35524920466596
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.4854,
+        "raw_value": 0.45
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.2695,
+        "raw_value": 0.22
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-017",
+    "promo_pct": 15,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "00a0070a8796dd601c46f8d406eb5927b8b0aa700dbc04774ac1f699a8e57d29",
+    "customer": "Intermarché · Bretagne",
+    "retailer": "Intermarché",
+    "region": "Bretagne",
+    "region_code": "53",
+    "product": "BIC Flex 3",
+    "sku": "DEMO-FLEX3-3",
+    "photo_key": "flex3",
+    "unit_price": 2.1,
+    "margin_rate": 0.27,
+    "firm_units": 8979,
+    "allocated_units": 1806,
+    "future_receipts_by_due": 7713,
+    "available_by_due": 9519,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 7713,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-017",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 1806,
+        "gap": 1806
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 1344,
+        "receipts": 0,
+        "demand": 1344,
+        "supply": 1806,
+        "gap": 462
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 1605,
+        "receipts": 7713,
+        "demand": 2949,
+        "supply": 9519,
+        "gap": 6570
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 2183,
+        "receipts": 0,
+        "demand": 5132,
+        "supply": 9519,
+        "gap": 4387
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 1466,
+        "receipts": 0,
+        "demand": 6598,
+        "supply": 9519,
+        "gap": 2921
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 593,
+        "receipts": 0,
+        "demand": 7191,
+        "supply": 9519,
+        "gap": 2328
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 356,
+        "receipts": 0,
+        "demand": 7547,
+        "supply": 9519,
+        "gap": 1972
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 1650,
+        "receipts": 0,
+        "demand": 9197,
+        "supply": 9519,
+        "gap": 322
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 4467,
+    "donor_reserved": 234,
+    "donor_safety": 1200,
+    "mobilizable": 3033,
+    "pack_size": 600,
+    "risk": 0.3849777045762373,
+    "learned_forecast_units": 9197,
+    "forecast_units": 9197,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 3.7352,
+        "raw_value": 1.533106960950764
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.4791,
+        "raw_value": 0.15
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.3715,
+        "raw_value": 0.18
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-018",
+    "promo_pct": 30,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "940a4ff30dbbba7d98ed4dff4a9f15e154f858f89796130f47e557e5e940e59a",
+    "customer": "Carrefour · Nouvelle-Aquitaine",
+    "retailer": "Carrefour",
+    "region": "Nouvelle-Aquitaine",
+    "region_code": "75",
+    "product": "BIC Cristal Original",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "photo_key": "cristal",
+    "unit_price": 0.3,
+    "margin_rate": 0.31,
+    "firm_units": 32050,
+    "allocated_units": 15450,
+    "future_receipts_by_due": 23850,
+    "available_by_due": 39300,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 23850,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-018",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 15450,
+        "gap": 15450
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 4678,
+        "receipts": 0,
+        "demand": 4678,
+        "supply": 15450,
+        "gap": 10772
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 8658,
+        "receipts": 0,
+        "demand": 13336,
+        "supply": 15450,
+        "gap": 2114
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 8152,
+        "receipts": 23850,
+        "demand": 21488,
+        "supply": 39300,
+        "gap": 17812
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 6410,
+        "receipts": 0,
+        "demand": 27898,
+        "supply": 39300,
+        "gap": 11402
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 2555,
+        "receipts": 0,
+        "demand": 30453,
+        "supply": 39300,
+        "gap": 8847
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 1393,
+        "receipts": 0,
+        "demand": 31846,
+        "supply": 39300,
+        "gap": 7454
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 5975,
+        "receipts": 0,
+        "demand": 37821,
+        "supply": 39300,
+        "gap": 1479
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 27250,
+    "donor_reserved": 5800,
+    "donor_safety": 4800,
+    "mobilizable": 16650,
+    "pack_size": 1200,
+    "risk": 0.2758688007503969,
+    "learned_forecast_units": 37821,
+    "forecast_units": 37821,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.2158,
+        "raw_value": 3.9015151515151514
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.0032,
+        "raw_value": 0.3
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.3205,
+        "raw_value": 0.2
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-019",
+    "promo_pct": 50,
+    "delay_days": 2,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "8afe3715e858a3d9ed72c344ffa7d24533b8d839f4caf8be444c338d1ff9423a",
+    "customer": "METRO · Nouvelle-Aquitaine",
+    "retailer": "METRO",
+    "region": "Nouvelle-Aquitaine",
+    "region_code": "75",
+    "product": "BIC Cristal Original",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "photo_key": "cristal",
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "firm_units": 111550,
+    "allocated_units": 47150,
+    "future_receipts_by_due": 91000,
+    "available_by_due": 138150,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 26752,
+    "short_days": 1,
+    "short_dates": [
+      "2026-08-28"
+    ],
+    "recovery_date": "2026-08-29",
+    "receipt_date": "2026-08-29",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 70250,
+    "event": "The main inbound receipt was rescheduled to 29 August after a transport delay.",
+    "event_reference": "DEMO-EVT-019",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 47150,
+        "gap": 47150
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 22485,
+        "receipts": 20750,
+        "demand": 22485,
+        "supply": 67900,
+        "gap": 45415
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 22201,
+        "receipts": 0,
+        "demand": 44686,
+        "supply": 67900,
+        "gap": 23214
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 21576,
+        "receipts": 0,
+        "demand": 66262,
+        "supply": 67900,
+        "gap": 1638
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 28390,
+        "receipts": 0,
+        "demand": 94652,
+        "supply": 67900,
+        "gap": -26752
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 9842,
+        "receipts": 70250,
+        "demand": 104494,
+        "supply": 138150,
+        "gap": 33656
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 6057,
+        "receipts": 0,
+        "demand": 110551,
+        "supply": 138150,
+        "gap": 27599
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 21860,
+        "receipts": 0,
+        "demand": 132411,
+        "supply": 138150,
+        "gap": 5739
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 85550,
+    "donor_reserved": 2900,
+    "donor_safety": 20400,
+    "mobilizable": 62250,
+    "pack_size": 1200,
+    "risk": 0.6759245075074953,
+    "learned_forecast_units": 132411,
+    "forecast_units": 132411,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.0885,
+        "raw_value": 4.1
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.6462,
+        "raw_value": 0.5
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.0116,
+        "raw_value": 2
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.0653,
+        "raw_value": 0.3
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-020",
+    "promo_pct": 20,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "0b3bd73e18d83af7b3c977f6c0b861ba2a0bb29544758a5f0de9a2d5eeda9b4f",
+    "customer": "E.Leclerc · Occitanie",
+    "retailer": "E.Leclerc",
+    "region": "Occitanie",
+    "region_code": "76",
+    "product": "BIC 4 Colours",
+    "sku": "DEMO-4C-12",
+    "photo_key": "four-colours",
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "firm_units": 26244,
+    "allocated_units": 9072,
+    "future_receipts_by_due": 19692,
+    "available_by_due": 28764,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 19692,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-020",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 9072,
+        "gap": 9072
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 4003,
+        "receipts": 0,
+        "demand": 4003,
+        "supply": 9072,
+        "gap": 5069
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 3690,
+        "receipts": 0,
+        "demand": 7693,
+        "supply": 9072,
+        "gap": 1379
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 5039,
+        "receipts": 19692,
+        "demand": 12732,
+        "supply": 28764,
+        "gap": 16032
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 6351,
+        "receipts": 0,
+        "demand": 19083,
+        "supply": 28764,
+        "gap": 9681
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 2100,
+        "receipts": 0,
+        "demand": 21183,
+        "supply": 28764,
+        "gap": 7581
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 1050,
+        "receipts": 0,
+        "demand": 22233,
+        "supply": 28764,
+        "gap": 6531
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 5231,
+        "receipts": 0,
+        "demand": 27464,
+        "supply": 28764,
+        "gap": 1300
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 19476,
+    "donor_reserved": 1560,
+    "donor_safety": 4800,
+    "mobilizable": 13116,
+    "pack_size": 600,
+    "risk": 0.37207972335012307,
+    "learned_forecast_units": 27464,
+    "forecast_units": 27464,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.8005,
+        "raw_value": 2.990112063282795
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.3184,
+        "raw_value": 0.2
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.1419,
+        "raw_value": 0.27
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-021",
+    "promo_pct": 10,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "9b58dbb49610c947161010ed3120f28fb86f12b4b2ac32a9bc4385d19abfe39d",
+    "customer": "Monoprix · Occitanie",
+    "retailer": "Monoprix",
+    "region": "Occitanie",
+    "region_code": "76",
+    "product": "BIC Maxi",
+    "sku": "DEMO-MAXI-50",
+    "photo_key": "maxi",
+    "unit_price": 0.72,
+    "margin_rate": 0.3,
+    "firm_units": 64450,
+    "allocated_units": 13120,
+    "future_receipts_by_due": 53586,
+    "available_by_due": 66706,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 53586,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-021",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 13120,
+        "gap": 13120
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 9575,
+        "receipts": 0,
+        "demand": 9575,
+        "supply": 13120,
+        "gap": 3545
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 11255,
+        "receipts": 53586,
+        "demand": 20830,
+        "supply": 66706,
+        "gap": 45876
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 15020,
+        "receipts": 0,
+        "demand": 35850,
+        "supply": 66706,
+        "gap": 30856
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 10305,
+        "receipts": 0,
+        "demand": 46155,
+        "supply": 66706,
+        "gap": 20551
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 4267,
+        "receipts": 0,
+        "demand": 50422,
+        "supply": 66706,
+        "gap": 16284
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 2560,
+        "receipts": 0,
+        "demand": 52982,
+        "supply": 66706,
+        "gap": 13724
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 11468,
+        "receipts": 0,
+        "demand": 64450,
+        "supply": 66706,
+        "gap": 2256
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 19250,
+    "donor_reserved": 3800,
+    "donor_safety": 3600,
+    "mobilizable": 11850,
+    "pack_size": 1200,
+    "risk": 0.4591223047313314,
+    "learned_forecast_units": 63726,
+    "forecast_units": 64450,
+    "firm_floor_applied": true,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 3.6902,
+        "raw_value": 1.6031280547409579
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.6399,
+        "raw_value": 0.1
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": 0.1388,
+        "raw_value": 0.38
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-022",
+    "promo_pct": 25,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "4f03cbd44cac287cfd5a9f45af8fcc7d29fae8b001a6a872ae36e702f1a13d03",
+    "customer": "Auchan · Auvergne-Rhône-Alpes",
+    "retailer": "Auchan",
+    "region": "Auvergne-Rhône-Alpes",
+    "region_code": "84",
+    "product": "BIC Kids Evolution",
+    "sku": "DEMO-KIDS-12",
+    "photo_key": "kids",
+    "unit_price": 1.8,
+    "margin_rate": 0.29,
+    "firm_units": 18204,
+    "allocated_units": 8035,
+    "future_receipts_by_due": 12870,
+    "available_by_due": 20905,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 12870,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-022",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 8035,
+        "gap": 8035
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 2524,
+        "receipts": 0,
+        "demand": 2524,
+        "supply": 8035,
+        "gap": 5511
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 4605,
+        "receipts": 0,
+        "demand": 7129,
+        "supply": 8035,
+        "gap": 906
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 4270,
+        "receipts": 12870,
+        "demand": 11399,
+        "supply": 20905,
+        "gap": 9506
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 3416,
+        "receipts": 0,
+        "demand": 14815,
+        "supply": 20905,
+        "gap": 6090
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 1391,
+        "receipts": 0,
+        "demand": 16206,
+        "supply": 20905,
+        "gap": 4699
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 759,
+        "receipts": 0,
+        "demand": 16965,
+        "supply": 20905,
+        "gap": 3940
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 3155,
+        "receipts": 0,
+        "demand": 20120,
+        "supply": 20905,
+        "gap": 785
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 9660,
+    "donor_reserved": 600,
+    "donor_safety": 2400,
+    "mobilizable": 6660,
+    "pack_size": 600,
+    "risk": 0.2827265258439337,
+    "learned_forecast_units": 20120,
+    "forecast_units": 20120,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.3596,
+        "raw_value": 3.677345537757437
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.1576,
+        "raw_value": 0.25
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.2695,
+        "raw_value": 0.22
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-023",
+    "promo_pct": 45,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "72c8b0e2149ef6526db7adb1218c2eac81e627a5cac02f6ab1b718c1963e3218",
+    "customer": "Carrefour · Provence-Alpes-Côte d'Azur",
+    "retailer": "Carrefour",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "region_code": "93",
+    "product": "BIC Flex 3",
+    "sku": "DEMO-FLEX3-3",
+    "photo_key": "flex3",
+    "unit_price": 2.1,
+    "margin_rate": 0.27,
+    "firm_units": 15651,
+    "allocated_units": 4395,
+    "future_receipts_by_due": 16287,
+    "available_by_due": 20682,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 16287,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-023",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 4395,
+        "gap": 4395
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 3402,
+        "receipts": 0,
+        "demand": 3402,
+        "supply": 4395,
+        "gap": 993
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 3317,
+        "receipts": 16287,
+        "demand": 6719,
+        "supply": 20682,
+        "gap": 13963
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 3185,
+        "receipts": 0,
+        "demand": 9904,
+        "supply": 20682,
+        "gap": 10778
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 4249,
+        "receipts": 0,
+        "demand": 14153,
+        "supply": 20682,
+        "gap": 6529
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 1503,
+        "receipts": 0,
+        "demand": 15656,
+        "supply": 20682,
+        "gap": 5026
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 925,
+        "receipts": 0,
+        "demand": 16581,
+        "supply": 20682,
+        "gap": 4101
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 3247,
+        "receipts": 0,
+        "demand": 19828,
+        "supply": 20682,
+        "gap": 854
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 7938,
+    "donor_reserved": 159,
+    "donor_safety": 1800,
+    "mobilizable": 5979,
+    "pack_size": 600,
+    "risk": 0.5263818696193193,
+    "learned_forecast_units": 19828,
+    "forecast_units": 19828,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 3.3447,
+        "raw_value": 2.141812865497076
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.4854,
+        "raw_value": 0.45
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.3715,
+        "raw_value": 0.18
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-024",
+    "promo_pct": 15,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "f32a97c2e6a9aafd8849aefeb6b77fe9efa3245fdc8949bc698622a42243ccd3",
+    "customer": "METRO · Provence-Alpes-Côte d'Azur",
+    "retailer": "METRO",
+    "region": "Provence-Alpes-Côte d'Azur",
+    "region_code": "93",
+    "product": "BIC Cristal Original",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "photo_key": "cristal",
+    "unit_price": 0.3,
+    "margin_rate": 0.31,
+    "firm_units": 20850,
+    "allocated_units": 7600,
+    "future_receipts_by_due": 15900,
+    "available_by_due": 23500,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 15900,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-024",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 7600,
+        "gap": 7600
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 3313,
+        "receipts": 0,
+        "demand": 3313,
+        "supply": 7600,
+        "gap": 4287
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 3007,
+        "receipts": 0,
+        "demand": 6320,
+        "supply": 7600,
+        "gap": 1280
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 4035,
+        "receipts": 15900,
+        "demand": 10355,
+        "supply": 23500,
+        "gap": 13145
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 5186,
+        "receipts": 0,
+        "demand": 15541,
+        "supply": 23500,
+        "gap": 7959
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 1754,
+        "receipts": 0,
+        "demand": 17295,
+        "supply": 23500,
+        "gap": 6205
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 877,
+        "receipts": 0,
+        "demand": 18172,
+        "supply": 23500,
+        "gap": 5328
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 4229,
+        "receipts": 0,
+        "demand": 22401,
+        "supply": 23500,
+        "gap": 1099
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 20800,
+    "donor_reserved": 6150,
+    "donor_safety": 3600,
+    "mobilizable": 11050,
+    "pack_size": 1200,
+    "risk": 0.30736230020222294,
+    "learned_forecast_units": 22401,
+    "forecast_units": 22401,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 2.8507,
+        "raw_value": 2.9118773946360155
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": -0.4791,
+        "raw_value": 0.15
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.3205,
+        "raw_value": 0.2
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-025",
+    "promo_pct": 30,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "8f6e8c8e50c487f98e221c75df8acd82637dadfa63cecdfeef2b19a8f5b13f1b",
+    "customer": "E.Leclerc · Corse",
+    "retailer": "E.Leclerc",
+    "region": "Corse",
+    "region_code": "94",
+    "product": "BIC Cristal Original",
+    "sku": "DEMO-CRISTAL-BLU-50",
+    "photo_key": "cristal",
+    "unit_price": 0.31,
+    "margin_rate": 0.32,
+    "firm_units": 46450,
+    "allocated_units": 4750,
+    "future_receipts_by_due": 43950,
+    "available_by_due": 48700,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-26",
+    "original_receipt_date": "2026-08-26",
+    "receipt_units": 35300,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-025",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 4750,
+        "gap": 4750
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 6561,
+        "receipts": 8650,
+        "demand": 6561,
+        "supply": 13400,
+        "gap": 6839
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 8194,
+        "receipts": 35300,
+        "demand": 14755,
+        "supply": 48700,
+        "gap": 33945
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 11704,
+        "receipts": 0,
+        "demand": 26459,
+        "supply": 48700,
+        "gap": 22241
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 7441,
+        "receipts": 0,
+        "demand": 33900,
+        "supply": 48700,
+        "gap": 14800
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 2813,
+        "receipts": 0,
+        "demand": 36713,
+        "supply": 48700,
+        "gap": 11987
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 1688,
+        "receipts": 0,
+        "demand": 38401,
+        "supply": 48700,
+        "gap": 10299
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 8616,
+        "receipts": 0,
+        "demand": 47017,
+        "supply": 48700,
+        "gap": 1683
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 36750,
+    "donor_reserved": 3500,
+    "donor_safety": 8400,
+    "mobilizable": 24850,
+    "pack_size": 1200,
+    "risk": 0.6585433363613674,
+    "learned_forecast_units": 47017,
+    "forecast_units": 47017,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 4.072,
+        "raw_value": 1.0080645161290323
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -1.2229,
+        "raw_value": 2
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.0032,
+        "raw_value": 0.3
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.0653,
+        "raw_value": 0.3
+      }
+    ]
+  },
+  {
+    "case_id": "OPP-026",
+    "promo_pct": 50,
+    "delay_days": 0,
+    "snapshot": "2026-08-24",
+    "policy_version": "1.2",
+    "model_version": "bic-service-risk-v2",
+    "context_hash": "8417413585533b4d4ac3dda5fca6552c211b82fbae0ce5a216285cb17f164b3a",
+    "customer": "Coopérative U · Corse",
+    "retailer": "Coopérative U",
+    "region": "Corse",
+    "region_code": "94",
+    "product": "BIC 4 Colours",
+    "sku": "DEMO-4C-12",
+    "photo_key": "four-colours",
+    "unit_price": 1.32,
+    "margin_rate": 0.34,
+    "firm_units": 11244,
+    "allocated_units": 5664,
+    "future_receipts_by_due": 9180,
+    "available_by_due": 14844,
+    "firm_shortfall": 0,
+    "forecast_end_shortfall": 0,
+    "peak_shortfall": 0,
+    "short_days": 0,
+    "short_dates": [],
+    "recovery_date": null,
+    "receipt_date": "2026-08-27",
+    "original_receipt_date": "2026-08-27",
+    "receipt_units": 9180,
+    "event": "No dated supply incident in the current plan. Demand is covered by allocated stock and scheduled receipts.",
+    "event_reference": "DEMO-EVT-026",
+    "promise_date": "2026-08-31",
+    "points": [
+      {
+        "date": "2026-08-24",
+        "daily": 0,
+        "receipts": 0,
+        "demand": 0,
+        "supply": 5664,
+        "gap": 5664
+      },
+      {
+        "date": "2026-08-25",
+        "daily": 1676,
+        "receipts": 0,
+        "demand": 1676,
+        "supply": 5664,
+        "gap": 3988
+      },
+      {
+        "date": "2026-08-26",
+        "daily": 3271,
+        "receipts": 0,
+        "demand": 4947,
+        "supply": 5664,
+        "gap": 717
+      },
+      {
+        "date": "2026-08-27",
+        "daily": 3247,
+        "receipts": 9180,
+        "demand": 8194,
+        "supply": 14844,
+        "gap": 6650
+      },
+      {
+        "date": "2026-08-28",
+        "daily": 2406,
+        "receipts": 0,
+        "demand": 10600,
+        "supply": 14844,
+        "gap": 4244
+      },
+      {
+        "date": "2026-08-29",
+        "daily": 882,
+        "receipts": 0,
+        "demand": 11482,
+        "supply": 14844,
+        "gap": 3362
+      },
+      {
+        "date": "2026-08-30",
+        "daily": 481,
+        "receipts": 0,
+        "demand": 11963,
+        "supply": 14844,
+        "gap": 2881
+      },
+      {
+        "date": "2026-08-31",
+        "daily": 2315,
+        "receipts": 0,
+        "demand": 14278,
+        "supply": 14844,
+        "gap": 566
+      }
+    ],
+    "donor": "BIC Centre Warehouse",
+    "receiver": "Warehouse BIC North",
+    "donor_physical": 8616,
+    "donor_reserved": 1284,
+    "donor_safety": 1800,
+    "mobilizable": 5532,
+    "pack_size": 600,
+    "risk": 0.3813900532314073,
+    "learned_forecast_units": 14278,
+    "forecast_units": 14278,
+    "firm_floor_applied": false,
+    "drivers": [
+      {
+        "feature": "coverage_days",
+        "log_odds_contribution": 1.8755,
+        "raw_value": 4.431924882629108
+      },
+      {
+        "feature": "lead_days",
+        "log_odds_contribution": -0.7334,
+        "raw_value": 3
+      },
+      {
+        "feature": "promo_uplift",
+        "log_odds_contribution": 0.6462,
+        "raw_value": 0.5
+      },
+      {
+        "feature": "delay_days",
+        "log_odds_contribution": -0.9409,
+        "raw_value": 0
+      },
+      {
+        "feature": "volatility",
+        "log_odds_contribution": -0.1419,
+        "raw_value": 0.27
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "snapshot_id": "bic-20260824-v1",
+  "source": "oci://AIDP_DATA@frn9volod3kr/Demo_BIC/bic-retail-v1/",
+  "loading": "Versioned Object Storage input snapshot, cached in the agent execution package. Not a live ERP read. No computed alternatives are included.",
+  "sha256": {
+    "accounts.json": "efb482de35c883b405b853be01e0546ddfbfeb5308897e55c84e10e2caab26de",
+    "supply.json": "0c1c5bf58241a02d742b449454991da962961ce5b52d14495c1dc433beeeb3a0",
+    "policies.json": "6f8aed15aff02a46fbf51fa30d2d939e6fe7a026cd858aa74d312e9a0708e385",
+    "model.json": "e883d0c950dc425ed5906a4e09f2d00e4071f7de1325700e4a8933d5b58e0252"
+  }
+}

@@ -1,0 +1,372 @@
+[
+  {
+    "createdBy": null,
+    "description": "Read the applicable version and exact rule text. Never grant an exception.",
+    "displayName": "get_policy_register",
+    "inputSchema": {},
+    "key": "0e45a5b9-3b76-4ff0-92a1-4876833e3255",
+    "positionX": 790.0,
+    "positionY": 650.0,
+    "properties": null,
+    "timeCreated": null,
+    "timeUpdated": null,
+    "toolConfig": {
+      "catalogKey": null,
+      "isRowLimitEnabled": true,
+      "maxRows": 100,
+      "query": "SELECT * FROM gold.bic_gold.policies ORDER BY policy_id",
+      "queryType": "SPARK",
+      "schemaKey": null,
+      "sparkComputeKey": "de8cff96-9784-41e5-9038-9ab6abe98bd8"
+    },
+    "toolType": "SQL",
+    "updatedBy": null,
+    "workspaceKey": null
+  },
+  {
+    "createdBy": null,
+    "description": "Retrieve BIC B2B demo policies. Cite IDs, version and source; no inventory facts or write authority.",
+    "displayName": "search_bic_policies",
+    "inputSchema": {
+      "query": ""
+    },
+    "key": "18abe87f-99e2-421d-9c65-0a379124dedc",
+    "positionX": 800.0,
+    "positionY": 900.0,
+    "properties": null,
+    "timeCreated": null,
+    "timeUpdated": null,
+    "toolConfig": {
+      "catalogKey": "gold",
+      "knowledgeBase": "kb_bic_b2b_policies",
+      "llm": {
+        "compartmentId": null,
+        "endpointUrl": null,
+        "modelId": "meta.llama-3.3-70b-instruct",
+        "provider": "meta",
+        "regionId": "eu-frankfurt-1",
+        "type": "OCI_GEN_AI"
+      },
+      "modelSettings": {
+        "max_tokens": "800",
+        "temperature": "",
+        "top_k": ""
+      },
+      "schemaKey": "bic_gold",
+      "topK": 3
+    },
+    "toolType": "RAG",
+    "updatedBy": null,
+    "workspaceKey": null
+  },
+  {
+    "createdBy": null,
+    "description": "Retrieve all 26 regional accounts and their actual dated coverage exceptions. Do not filter by score alone.",
+    "displayName": "get_portfolio",
+    "inputSchema": {},
+    "key": "d22dbf5a-72af-4926-b09f-b3d7e9d5977c",
+    "positionX": 100.0,
+    "positionY": 650.0,
+    "properties": null,
+    "timeCreated": null,
+    "timeUpdated": null,
+    "toolConfig": {
+      "catalogKey": null,
+      "isRowLimitEnabled": true,
+      "maxRows": 100,
+      "query": "SELECT case_id, customer, region, get_json_object(context_json, '$.region_code') AS region_code, product, risk, firm_shortfall, peak_shortfall, short_days, get_json_object(context_json, '$.event') AS supply_event, get_json_object(context_json, '$.short_dates') AS short_dates, get_json_object(context_json, '$.recovery_date') AS recovery_date, batch_id FROM gold.bic_gold.account_context ORDER BY firm_shortfall DESC, peak_shortfall DESC, risk DESC",
+      "queryType": "SPARK",
+      "schemaKey": null,
+      "sparkComputeKey": "de8cff96-9784-41e5-9038-9ab6abe98bd8"
+    },
+    "toolType": "SQL",
+    "updatedBy": null,
+    "workspaceKey": null
+  },
+  {
+    "createdBy": null,
+    "description": "Read revenue budget, forecast revenue and margin separately. Do not treat exposure as recognized loss.",
+    "displayName": "get_financial_outlook",
+    "inputSchema": {},
+    "key": "df225a58-a11c-4af9-a583-9d4f4fb7122f",
+    "positionX": 1003.0,
+    "positionY": 660.0,
+    "properties": null,
+    "timeCreated": null,
+    "timeUpdated": null,
+    "toolConfig": {
+      "catalogKey": null,
+      "isRowLimitEnabled": true,
+      "maxRows": 100,
+      "query": "SELECT * FROM gold.bic_gold.financial_outlook",
+      "queryType": "SPARK",
+      "schemaKey": null,
+      "sparkComputeKey": "de8cff96-9784-41e5-9038-9ab6abe98bd8"
+    },
+    "toolType": "SQL",
+    "updatedBy": null,
+    "workspaceKey": null
+  },
+  {
+    "createdBy": null,
+    "description": "Read measured test metrics and MLflow run identity. Explain synthetic evaluation limits.",
+    "displayName": "get_model_performance",
+    "inputSchema": {},
+    "key": "fff21101-232d-4545-8c3b-46114bd4a230",
+    "positionX": 1250.0,
+    "positionY": 650.0,
+    "properties": null,
+    "timeCreated": null,
+    "timeUpdated": null,
+    "toolConfig": {
+      "catalogKey": null,
+      "isRowLimitEnabled": true,
+      "maxRows": 100,
+      "query": "SELECT * FROM gold.bic_gold.model_performance",
+      "queryType": "SPARK",
+      "schemaKey": null,
+      "sparkComputeKey": "de8cff96-9784-41e5-9038-9ab6abe98bd8"
+    },
+    "toolType": "SQL",
+    "updatedBy": null,
+    "workspaceKey": null
+  },
+  {
+    "key": "ed2f495e-e12a-5b77-b1d7-3e3ddfc50f6b",
+    "displayName": "calculate_account_scenario",
+    "description": "Compute forecast, risk, dated coverage, input evidence and inventory constraints now. No lookup of precomputed scenario rows.",
+    "toolType": "CUSTOM",
+    "positionX": 790,
+    "positionY": 200,
+    "inputSchema": {
+      "case_id": {
+        "name": "case_id",
+        "type": "string",
+        "description": "Exact current account ID from trusted_context."
+      },
+      "promo_pct": {
+        "name": "promo_pct",
+        "type": "number",
+        "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+      },
+      "delay_days": {
+        "name": "delay_days",
+        "type": "number",
+        "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+      }
+    },
+    "toolConfig": {
+      "displayName": "calculate_account_scenario",
+      "description": "Compute forecast, risk, dated coverage, input evidence and inventory constraints now. No lookup of precomputed scenario rows.",
+      "version": "2.0.0",
+      "packagePath": "BICDemo/agent/custom_tool_bic_live_calculations.zip",
+      "tools": [
+        {
+          "toolClassName": "BicScenarioCalculator",
+          "displayName": "calculate_account_scenario",
+          "description": "Compute forecast, risk, dated coverage, input evidence and inventory constraints now. No lookup of precomputed scenario rows.",
+          "version": "2.0.0",
+          "config": {},
+          "inputSchema": {
+            "case_id": {
+              "name": "case_id",
+              "type": "string",
+              "description": "Exact current account ID from trusted_context."
+            },
+            "promo_pct": {
+              "name": "promo_pct",
+              "type": "number",
+              "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+            },
+            "delay_days": {
+              "name": "delay_days",
+              "type": "number",
+              "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "key": "000d429d-59d0-521f-a4cf-71a655f6b7ea",
+    "displayName": "evaluate_transfer",
+    "description": "Calculate a candidate warehouse transfer now: quantity, arrival, freight, margin, residual gaps and policy results. Supply quantity_units=-1 for the default policy sizing, or an explicit candidate quantity to test a user constraint. This is an evaluation, not a reservation.",
+    "toolType": "CUSTOM",
+    "positionX": 790,
+    "positionY": 300,
+    "inputSchema": {
+      "case_id": {
+        "name": "case_id",
+        "type": "string",
+        "description": "Exact current account ID from trusted_context."
+      },
+      "promo_pct": {
+        "name": "promo_pct",
+        "type": "number",
+        "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+      },
+      "delay_days": {
+        "name": "delay_days",
+        "type": "number",
+        "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+      },
+      "quantity_units": {
+        "name": "quantity_units",
+        "type": "number",
+        "description": "Candidate transfer units. -1 uses policy sizing; an explicit nonnegative integer evaluates that candidate. Never silently change the user quantity."
+      }
+    },
+    "toolConfig": {
+      "displayName": "evaluate_transfer",
+      "description": "Calculate a candidate warehouse transfer now: quantity, arrival, freight, margin, residual gaps and policy results. Supply quantity_units=-1 for the default policy sizing, or an explicit candidate quantity to test a user constraint. This is an evaluation, not a reservation.",
+      "version": "2.0.0",
+      "packagePath": "BICDemo/agent/custom_tool_bic_live_calculations.zip",
+      "tools": [
+        {
+          "toolClassName": "BicTransferEvaluator",
+          "displayName": "evaluate_transfer",
+          "description": "Calculate a candidate warehouse transfer now: quantity, arrival, freight, margin, residual gaps and policy results. Supply quantity_units=-1 for the default policy sizing, or an explicit candidate quantity to test a user constraint. This is an evaluation, not a reservation.",
+          "version": "2.0.0",
+          "config": {},
+          "inputSchema": {
+            "case_id": {
+              "name": "case_id",
+              "type": "string",
+              "description": "Exact current account ID from trusted_context."
+            },
+            "promo_pct": {
+              "name": "promo_pct",
+              "type": "number",
+              "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+            },
+            "delay_days": {
+              "name": "delay_days",
+              "type": "number",
+              "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+            },
+            "quantity_units": {
+              "name": "quantity_units",
+              "type": "number",
+              "description": "Candidate transfer units. -1 uses policy sizing; an explicit nonnegative integer evaluates that candidate. Never silently change the user quantity."
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "key": "64cb8c42-c63b-5367-9409-59dc9e3477ab",
+    "displayName": "evaluate_expedite",
+    "description": "Calculate bringing forward the existing factory receipt now, with estimated cost and policy checks. Never count it as additional supply.",
+    "toolType": "CUSTOM",
+    "positionX": 790,
+    "positionY": 400,
+    "inputSchema": {
+      "case_id": {
+        "name": "case_id",
+        "type": "string",
+        "description": "Exact current account ID from trusted_context."
+      },
+      "promo_pct": {
+        "name": "promo_pct",
+        "type": "number",
+        "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+      },
+      "delay_days": {
+        "name": "delay_days",
+        "type": "number",
+        "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+      }
+    },
+    "toolConfig": {
+      "displayName": "evaluate_expedite",
+      "description": "Calculate bringing forward the existing factory receipt now, with estimated cost and policy checks. Never count it as additional supply.",
+      "version": "2.0.0",
+      "packagePath": "BICDemo/agent/custom_tool_bic_live_calculations.zip",
+      "tools": [
+        {
+          "toolClassName": "BicAccelerationEvaluator",
+          "displayName": "evaluate_expedite",
+          "description": "Calculate bringing forward the existing factory receipt now, with estimated cost and policy checks. Never count it as additional supply.",
+          "version": "2.0.0",
+          "config": {},
+          "inputSchema": {
+            "case_id": {
+              "name": "case_id",
+              "type": "string",
+              "description": "Exact current account ID from trusted_context."
+            },
+            "promo_pct": {
+              "name": "promo_pct",
+              "type": "number",
+              "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+            },
+            "delay_days": {
+              "name": "delay_days",
+              "type": "number",
+              "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "key": "c1677c68-f773-5ac7-8452-ad140f4829de",
+    "displayName": "evaluate_split",
+    "description": "Evaluate a negotiated split delivery now: no stock creation, residual firm deficit, missing customer consent and quotation. Not an approved promise change.",
+    "toolType": "CUSTOM",
+    "positionX": 790,
+    "positionY": 500,
+    "inputSchema": {
+      "case_id": {
+        "name": "case_id",
+        "type": "string",
+        "description": "Exact current account ID from trusted_context."
+      },
+      "promo_pct": {
+        "name": "promo_pct",
+        "type": "number",
+        "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+      },
+      "delay_days": {
+        "name": "delay_days",
+        "type": "number",
+        "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+      }
+    },
+    "toolConfig": {
+      "displayName": "evaluate_split",
+      "description": "Evaluate a negotiated split delivery now: no stock creation, residual firm deficit, missing customer consent and quotation. Not an approved promise change.",
+      "version": "2.0.0",
+      "packagePath": "BICDemo/agent/custom_tool_bic_live_calculations.zip",
+      "tools": [
+        {
+          "toolClassName": "BicSplitEvaluator",
+          "displayName": "evaluate_split",
+          "description": "Evaluate a negotiated split delivery now: no stock creation, residual firm deficit, missing customer consent and quotation. Not an approved promise change.",
+          "version": "2.0.0",
+          "config": {},
+          "inputSchema": {
+            "case_id": {
+              "name": "case_id",
+              "type": "string",
+              "description": "Exact current account ID from trusted_context."
+            },
+            "promo_pct": {
+              "name": "promo_pct",
+              "type": "number",
+              "description": "Current whole percentage uplift, 0 through 60. Copy trusted_context."
+            },
+            "delay_days": {
+              "name": "delay_days",
+              "type": "number",
+              "description": "Current total inbound delay, 0 through 4 days. Copy trusted_context."
+            }
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,1 @@
+{"displayName": "bic_policy_docs", "catalogName": "gold", "schemaName": "bic_gold", "volumeType": "EXTERNAL", "storageLocation": "oci://AIDP_DATA@frn9volod3kr/Demo_BIC/bic-retail-v1/policies/", "description": "BIC policy evidence v1.2"}

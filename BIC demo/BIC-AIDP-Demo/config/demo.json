@@ -1,0 +1,22 @@
+{
+  "demo": {
+    "name": "BIC Retail Studio",
+    "as_of": "2026-08-24",
+    "horizon_days": 7,
+    "data_kind": "synthetic"
+  },
+  "object_storage": {
+    "raw_uri": "oci://AIDP_DATA@frn9volod3kr/Demo_BIC/bic-retail-v1/raw",
+    "gold_export_uri": "oci://AIDP_DATA@frn9volod3kr/Demo_BIC/bic-retail-v1/exports"
+  },
+  "catalog": {
+    "bronze": "bronze.bic_bronze",
+    "silver": "silver.bic_silver",
+    "gold": "gold.bic_gold"
+  },
+  "mlflow": {
+    "experiment": "BIC_Retail_Service_Risk",
+    "register_model": false
+  },
+  "batch_id": "bic-20260824-v1"
+}

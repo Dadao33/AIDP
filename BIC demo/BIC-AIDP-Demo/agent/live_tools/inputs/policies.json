@@ -1,0 +1,93 @@
+{
+  "id": "DEMO-B2B-POLICY",
+  "version": "1.2",
+  "title": "B2B service policies",
+  "source": "policies/",
+  "fictional": true,
+  "scope": "France B2B retail demo: 26 independent regional account scenarios; policy thresholds to be approved by BIC.",
+  "effective_from": "2026-08-01",
+  "effective_to": "2026-12-31",
+  "thresholds": {
+    "minimum_margin_rate": 0.25,
+    "manager_approval_above_eur": 500,
+    "finance_approval_above_eur": 1500
+  },
+  "donor_safety_units": {
+    "OPP-001": 12300,
+    "OPP-002": 6000,
+    "OPP-003": 3600,
+    "OPP-004": 2400,
+    "OPP-005": 1200,
+    "OPP-006": 6000,
+    "OPP-007": 10800,
+    "OPP-008": 5400,
+    "OPP-009": 3600,
+    "OPP-010": 1800,
+    "OPP-011": 2400,
+    "OPP-012": 6000,
+    "OPP-013": 19200,
+    "OPP-014": 3600,
+    "OPP-015": 3600,
+    "OPP-016": 1800,
+    "OPP-017": 1200,
+    "OPP-018": 4800,
+    "OPP-019": 20400,
+    "OPP-020": 4800,
+    "OPP-021": 3600,
+    "OPP-022": 2400,
+    "OPP-023": 1800,
+    "OPP-024": 3600,
+    "OPP-025": 8400,
+    "OPP-026": 1800
+  },
+  "rules": [
+    {
+      "id": "GOV-01",
+      "title": "Applicable policy",
+      "owner": "Governance",
+      "requirement": "Use the dated, approved policy version applicable to the scope. Unknown or expired rules require clarification."
+    },
+    {
+      "id": "STK-01",
+      "title": "Protect the donor warehouse",
+      "owner": "Supply chain",
+      "requirement": "Do not reuse another customer reservation or consume safety stock. Transfer only the same SKU."
+    },
+    {
+      "id": "LOG-01",
+      "title": "Respect shipping multiples",
+      "owner": "Operations",
+      "requirement": "A transfer must be positive and respect the SKU shipping multiple."
+    },
+    {
+      "id": "SLA-01",
+      "title": "Protect service dates",
+      "owner": "Customer service",
+      "requirement": "Arrive before the relevant demand date. Separate the firm customer promise from forecast demand. A residual firm shortfall requires commercial review."
+    },
+    {
+      "id": "FIN-01",
+      "title": "Protect margin",
+      "owner": "Finance",
+      "requirement": "Gross margin after incremental freight must be at least 25% of the net value of the option. A lower risk score does not override this check."
+    },
+    {
+      "id": "AUT-01",
+      "title": "Apply cost delegation",
+      "owner": "Finance / supply chain",
+      "requirement": "Every cost needs human approval: up to EUR 500 Operations; above EUR 500 Supply chain manager; above EUR 1500 Supply chain director and Finance. Unknown costs must be quoted first."
+    },
+    {
+      "id": "SUP-01",
+      "title": "Confirm factory acceleration",
+      "owner": "Supply planning",
+      "requirement": "Do not commit an acceleration until capacity, date and transport have been confirmed."
+    },
+    {
+      "id": "CLI-01",
+      "title": "Obtain distributor agreement",
+      "owner": "Account manager",
+      "requirement": "Split delivery or a changed promise requires documented customer consent. No automatic customer message."
+    }
+  ]
+}

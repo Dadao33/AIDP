@@ -1,0 +1,84 @@
+{
+  "version": "bic-service-risk-v2",
+  "features": [
+    "coverage_days",
+    "lead_days",
+    "promo_uplift",
+    "delay_days",
+    "volatility"
+  ],
+  "labels": [
+    "Available cover",
+    "Replenishment lead time",
+    "Promotion uplift",
+    "Inbound delay",
+    "Demand volatility"
+  ],
+  "mean": [
+    7.355554076388896,
+    4.498413510416658,
+    0.2990188784722219,
+    2.024923909722219,
+    0.3256121145833336
+  ],
+  "std": [
+    3.7812834664350796,
+    2.0450623208696705,
+    0.17253708351352542,
+    1.1607474368344135,
+    0.15806704243991573
+  ],
+  "weights": [
+    -1.1892377380245296,
+    -2.4257289336844114,
+    1.000974908046494,
+    0.5547580456621736,
+    0.5393309673138452,
+    0.4032927365086009
+  ],
+  "threshold": 0.41999999999999993,
+  "forecast_weights": [
+    -0.014742661988417149,
+    1.001977330634907,
+    0.7070759586746074,
+    0.9768409268268309
+  ],
+  "metrics": {
+    "roc_auc": 0.9049776410309897,
+    "brier": 0.11855037180799272,
+    "precision": 0.7347368421052631,
+    "recall": 0.8349282296650717,
+    "rows": 1152,
+    "confusion": {
+      "tp": 349,
+      "fp": 126,
+      "fn": 69,
+      "tn": 608
+    }
+  },
+  "validation": {
+    "roc_auc": 0.9210599721059972,
+    "brier": 0.10844108664108948,
+    "precision": 0.7784946236559139,
+    "recall": 0.832183908045977,
+    "rows": 1152,
+    "confusion": {
+      "tp": 362,
+      "fp": 103,
+      "fn": 73,
+      "tn": 614
+    }
+  },
+  "forecast_wape": 0.10250150311236796,
+  "baseline_wape": 0.22525098584105666,
+  "split": {
+    "train": 5760,
+    "validation": 1152,
+    "test": 1152
+  },
+  "seed": 4217,
+  "synthetic": true,
+  "target": "At least one order line not served in full within seven days",
+  "limitations": "Synthetic outcomes; not BIC production accuracy. Conditional association, not causal proof. Daily shape is a planning allocation of the learned weekly total.",
+  "mlflow_run_id": "07fa9eb8d3e84880a2553261d2e8bc1b"
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "AIDP_JOB_UI_PLAN",
+  "name": "BIC_Retail_Daily",
+  "note": "Task plan for the Jobs UI, not an unverified REST create payload. Each task reloads persisted inputs. Use the same Spark cluster.",
+  "max_concurrent_runs": 1,
+  "schedule": "Manual for the demonstration",
+  "tasks": [
+    {
+      "name": "01_bronze_ingest",
+      "notebook": "/Workspace/BICDemo/notebooks/01_bronze_ingest.ipynb",
+      "depends_on": []
+    },
+    {
+      "name": "02_silver_quality_features",
+      "notebook": "/Workspace/BICDemo/notebooks/02_silver_quality_features.ipynb",
+      "depends_on": [
+        "01_bronze_ingest"
+      ]
+    },
+    {
+      "name": "03_ml_training_mlops",
+      "notebook": "/Workspace/BICDemo/notebooks/03_ml_training_mlops.ipynb",
+      "depends_on": [
+        "02_silver_quality_features"
+      ]
+    },
+    {
+      "name": "04_gold_scenarios_publish",
+      "notebook": "/Workspace/BICDemo/notebooks/04_gold_scenarios_publish.ipynb",
+      "depends_on": [
+        "03_ml_training_mlops"
+      ]
+    }
+  ]
+}
